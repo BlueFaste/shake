@@ -20,9 +20,6 @@ npm run build
 ```
 npm run lint
 ```
-### Start Git Flow
-```
-Git Flow Protocole
-```
+
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
