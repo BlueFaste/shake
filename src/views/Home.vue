@@ -1,7 +1,5 @@
 <template>
 	<div class="home">
-		<img alt="Vue logo" src="../assets/logo.png">
-
 		<SquareImgLink :data="data.ourRecipes" :imgLink="require('../assets/background/dylan-gillis-3e_tXW5O3GQ-unsplash.png')"></SquareImgLink>
 		<SquareImgLink :data="data.proposYourRecipes" :imgLink="require('../assets/background/timur-romanov-GsavR7VMkpk-unsplash.png')"></SquareImgLink>
 		<OrangeButton text="Trouve ton cocktail"></OrangeButton>
@@ -50,7 +48,5 @@ export default {
 </script>
 
 <style>
-.home{
-	background: #1C1C1C;
-}
+
 </style>
