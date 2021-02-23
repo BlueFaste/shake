@@ -1,0 +1,15 @@
+export const squareImgLink = {
+	state: () => ({
+		ourRecipes:{
+			link:'/about',
+			text:'Nos recettes',
+			img:'../assets/background/dylan-gillis-3e_tXW5O3GQ-unsplash.png',
+		},
+		proposYourRecipes:{
+			link:'/about',
+			text:'Propose ton cocktail',
+			img:'../assets/background/timur-romanov-GsavR7VMkpk-unsplash.png',
+		},
+	})
+
+}
