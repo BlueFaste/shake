@@ -35,6 +35,11 @@
 	box-sizing: content-box;
 }
 
+.img-shadow{
+	box-shadow: 0 0 35px rgba(99, 99, 99, 85);
+	border-radius: 20px;
+}
+
 @font-face {
 	font-family: 'DM Serif Display';
 	src: url("assets/font/DMSerifDisplay-Regular.ttf");
