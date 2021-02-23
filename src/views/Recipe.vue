@@ -64,6 +64,11 @@ export default {
 			recipe: this.$store.state.recipes.mojito
 		}
 	},
+	mounted() {
+		const nameRecipe = this.$route.params.name;
+		this.recipe = this.$store.state.recipes[nameRecipe];
+		console.log(this.recipe)
+	},
 	methods:{
 		openSteps(){
 			console.log('go')
