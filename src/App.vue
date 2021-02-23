@@ -29,4 +29,35 @@
 #nav a.router-link-exact-active {
   color: #42b983;
 }
+
+
+.content-box{
+	box-sizing: content-box;
+}
+
+@font-face {
+	font-family: 'DM Serif Display';
+	src: url("assets/font/DMSerifDisplay-Regular.ttf");
+}
+
+.DM-Serif-Display{
+	font-family: 'DM Serif Display', sans-serif;
+}
+
+@font-face {
+	font-family: Montserrat;
+	src: url("assets/font/Montserrat-Regular.ttf");
+}
+
+.DM-Serif-Display{
+	font-family: Montserrat, sans-serif;
+}
+
+*{
+	font-family: Montserrat, sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family: 'DM Serif Display', sans-serif;
+}
 </style>
