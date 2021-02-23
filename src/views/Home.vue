@@ -7,6 +7,7 @@
 		<SquareImgLink :data="data.proposYourRecipes" :imgLink="require('../assets/background/timur-romanov-GsavR7VMkpk-unsplash.png')"></SquareImgLink>
 		<OrangeButton text="Trouve ton cocktail"></OrangeButton>
 		<OrangeButton text="C'est parti !"></OrangeButton>
+		<LastRecipe :recipe="recipes.strawberryParadise" :imgLink="require('../assets/background/strawberryParadise.png')"></LastRecipe>
 	</div>
 </template>
 
@@ -15,10 +16,12 @@
 import HelloWorld from '@/components/HelloWorld.vue'
 import SquareImgLink from "@/components/SquareImgLink";
 import OrangeButton from "@/components/OrangeButton";
+import LastRecipe from "@/components/LastRecipe";
 
 export default {
 	name: 'Home',
 	components: {
+		LastRecipe,
 		OrangeButton,
 		SquareImgLink,
 		HelloWorld
@@ -26,7 +29,8 @@ export default {
 	data(){
 		return{
 			test: this.$store.state.test.test,
-			data: this.$store.state.squareImgLink
+			data: this.$store.state.squareImgLink,
+			recipes: this.$store.state.recipes,
 
 		}
 	}

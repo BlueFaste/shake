@@ -1,9 +1,9 @@
 <template>
 	<div class="position-relative my-4 d-flex justify-content-center">
-		<router-link :to="data.link">
+		<router-link :to="recipe.link">
 			<div class="position-relative content-box d-flex">
 				<img alt='' :src="imgLink" class="opacity-80 img-shadow">
-				<h3 class="position-absolute bottom-left-0 ml-4 mb-4 text-white">{{data.text}}</h3>
+				<h3 class="position-absolute ml-4 mt-2 text-white">{{recipe.name}}</h3>
 
 			</div>
 		</router-link>
@@ -12,22 +12,14 @@
 
 <script>
 export default {
-	name: "SquareImgLink",
+	name: "LastRecipe",
 	props:{
-		data: Object,
+		recipe: Object,
 		imgLink: String,
 	}
 }
 </script>
 
 <style scoped>
-.bottom-left-0{
-	bottom: 0;
-	left: 0;
-}
-
-.opacity-80{
-	opacity: 0.80;
-}
 
 </style>
