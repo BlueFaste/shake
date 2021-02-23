@@ -3,7 +3,7 @@
 		<router-link :to="recipe.link">
 			<div class="position-relative content-box d-flex">
 				<img alt='' :src="imgLink" class="img-shadow">
-				<h4 class="position-absolute ml-4 mt-2 text-white">{{recipe.name}}</h4>
+				<h3 class="position-absolute ml-4 mt-2 text-white">{{recipe.name}}</h3>
 
 			</div>
 		</router-link>
@@ -21,5 +21,8 @@ export default {
 </script>
 
 <style scoped>
+h3{
+font-size: 6.7vw;
+}
 
 </style>
