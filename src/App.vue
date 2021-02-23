@@ -2,7 +2,7 @@
   <div id="app">
 		<Header></Header>
 
-    <router-view/>
+    <router-view class="mx-4 mt-4"/>
   </div>
 </template>
 
@@ -29,7 +29,7 @@ export default {
 #app {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  /*text-align: center;*/
 
 	background-color: #1C1C1C;
 
@@ -44,6 +44,10 @@ export default {
 .img-shadow{
 	box-shadow: 0 0 35px rgba(40, 40, 40, 85);
 	border-radius: 20px;
+}
+
+a{
+	color:white !important;
 }
 
 @font-face {
@@ -74,9 +78,17 @@ export default {
 
 *{
 	font-family: Montserrat, sans-serif;
+	color:white;
 }
 
 h1,h2,h3,h4,h5,h6{
 	font-family: 'DM Serif Display', sans-serif;
+}
+
+h1{
+	font-size: 7vw !important;
+}
+h2{
+	font-size: 7vw !important;
 }
 </style>
