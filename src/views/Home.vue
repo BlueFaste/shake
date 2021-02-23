@@ -3,24 +3,34 @@
 		<img alt="Vue logo" src="../assets/logo.png">
 		<HelloWorld msg="Welcome to Your Vue.js App"/>
 
-		{{test}}
+		<SquareImgLink :data="data.ourRecipes" :imgLink="require('../assets/background/dylan-gillis-3e_tXW5O3GQ-unsplash.png')"></SquareImgLink>
+		<SquareImgLink :data="data.proposYourRecipes" :imgLink="require('../assets/background/timur-romanov-GsavR7VMkpk-unsplash.png')"></SquareImgLink>
 	</div>
 </template>
 
 <script>
 // @ is an alias to /src
 import HelloWorld from '@/components/HelloWorld.vue'
+import SquareImgLink from "@/components/SquareImgLink";
 
 export default {
 	name: 'Home',
 	components: {
+		SquareImgLink,
 		HelloWorld
 	},
 	data(){
 		return{
 			test: this.$store.state.test.test,
+			data: this.$store.state.squareImgLink
 
 		}
 	}
 }
 </script>
+
+<style>
+.home{
+	background: #1C1C1C;
+}
+</style>
