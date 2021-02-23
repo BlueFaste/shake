@@ -18,6 +18,7 @@
 			</div>
 
 		</div>
+		<RecipeBanner :img-link="require('../assets/background/bannerMojito.png')" :recipe="recipes.mojito"></RecipeBanner>
 	</div>
 </template>
 
@@ -27,10 +28,12 @@ import SquareImgLink from "@/components/SquareImgLink";
 import OrangeButton from "@/components/OrangeButton";
 import LastRecipe from "@/components/LastRecipe";
 import RecipesPresentation from "@/components/RecipesPresentation";
+import RecipeBanner from "@/components/RecipeBanner";
 
 export default {
 	name: 'test',
 	components: {
+		RecipeBanner,
 		RecipesPresentation,
 		LastRecipe,
 		OrangeButton,
