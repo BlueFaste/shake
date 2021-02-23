@@ -42,7 +42,7 @@ export default {
 }
 
 .img-shadow{
-	box-shadow: 0 0 35px rgba(59, 59, 59, 85);
+	box-shadow: 0 0 35px rgba(40, 40, 40, 85);
 	border-radius: 20px;
 }
 
