@@ -3,7 +3,7 @@
 		<router-link :to="data.link">
 			<div class="position-relative content-box d-flex">
 				<img alt='' :src="imgLink" class="opacity-80 img-shadow">
-				<h3 class="position-absolute bottom-left-0 ml-4 mb-4 text-white">{{data.text}}</h3>
+				<h2 class="position-absolute bottom-left-0 ml-4 mb-4 text-white">{{data.text}}</h2>
 
 			</div>
 		</router-link>
@@ -28,11 +28,6 @@ export default {
 
 .opacity-80{
 	opacity: 0.80;
-}
-
-.img-shadow{
-	box-shadow: 0 0 35px rgba(99, 99, 99, 85);
-	border-radius: 20px;
 }
 
 </style>

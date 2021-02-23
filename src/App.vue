@@ -1,38 +1,58 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
-  </div>
+		<Header></Header>
+    <router-view class="mx-4 mt-4"/>
+		<Footer></Footer>
+
+	</div>
 </template>
+
+<script>
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+
+
+export default {
+	name: 'Home',
+	components: {
+		Header,
+		Footer,
+
+	},
+	data(){
+		return{
+			test: this.$store.state.test.test,
+			data: this.$store.state.squareImgLink,
+			recipes: this.$store.state.recipes,
+
+		}
+	}
+}
+</script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+  /*text-align: center;*/
+
+	background-color: #1C1C1C;
+
 }
 
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
 
 
 .content-box{
 	box-sizing: content-box;
+}
+
+.img-shadow{
+	box-shadow: 0 0 35px rgba(40, 40, 40, 85);
+	border-radius: 20px;
+}
+
+a{
+	color:white !important;
 }
 
 @font-face {
@@ -48,16 +68,32 @@
 	font-family: Montserrat;
 	src: url("assets/font/Montserrat-Regular.ttf");
 }
+@font-face {
+	font-family: Montserrat-bold;
+	src: url("assets/font/Montserrat-Bold.ttf");
+}
 
-.DM-Serif-Display{
+.Montserrat{
 	font-family: Montserrat, sans-serif;
+}
+
+.Montserrat-bold{
+	font-family: Montserrat-bold, sans-serif;
 }
 
 *{
 	font-family: Montserrat, sans-serif;
+	color:white;
 }
 
 h1,h2,h3,h4,h5,h6{
 	font-family: 'DM Serif Display', sans-serif;
+}
+
+h1{
+	font-size: 7vw !important;
+}
+h2{
+	font-size: 7vw !important;
 }
 </style>

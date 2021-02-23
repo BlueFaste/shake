@@ -1,30 +1,24 @@
 <template>
 	<div class="home">
-		<h1>Bienvenue sur Shake !</h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rutrum nisi ex, nec posuere odio pretium vel. Duis tincidunt velit nec lectus interdum, quis volutpat tellus tempor. Aliquam feugiat velit consequat blandit interdum. Integer non enim dolor.</p>
-		<router-link to="" class="d-flex justify-content-end my-4">
-			<OrangeButton text="Trouve ton cocktail"></OrangeButton>
-		</router-link>
 		<SquareImgLink :data="data.ourRecipes" :imgLink="require('../assets/background/dylan-gillis-3e_tXW5O3GQ-unsplash.png')"></SquareImgLink>
 		<SquareImgLink :data="data.proposYourRecipes" :imgLink="require('../assets/background/timur-romanov-GsavR7VMkpk-unsplash.png')"></SquareImgLink>
-		<h2 class="Montserrat text-center mt-5 mb-0" style="font-size: 5vw !important;"> Dernière recette</h2>
+		<OrangeButton text="Trouve ton cocktail"></OrangeButton>
+		<OrangeButton text="C'est parti !"></OrangeButton>
 		<LastRecipe :recipe="recipes.strawberryParadise" :imgLink="require('../assets/background/strawberryParadise.png')"></LastRecipe>
-		<h2 class="Montserrat text-center mt-5 mb-0" style="font-size: 5vw !important;"> Les plus populaires</h2>
-		<div class="d-flex flex-wrap justify-content-around">
-			<div class="mr-1">
+		<div class="d-flex flex-wrap justify-content-center">
+			<div>
 				<RecipesPresentation :recipe="recipes.mojito" :imgLink="require('../assets/background/mojito.png')"></RecipesPresentation>
 				<RecipesPresentation :recipe="recipes.margarita" :imgLink="require('../assets/background/margarita.png')"></RecipesPresentation>
 				<RecipesPresentation :recipe="recipes.americano" :imgLink="require('../assets/background/americano.png')"></RecipesPresentation>
 			</div>
-			<div class="ml-1">
+			<div>
 				<RecipesPresentation :recipe="recipes.pinaColada" :imgLink="require('../assets/background/pinaColoda.png')"></RecipesPresentation>
 				<RecipesPresentation :recipe="recipes.caipirinha" :imgLink="require('../assets/background/caipiranha.png')"></RecipesPresentation>
 				<RecipesPresentation :recipe="recipes.aperolSpritz" :imgLink="require('../assets/background/aperolSpritz.png')"></RecipesPresentation>
 			</div>
+
 		</div>
-		<router-link to="" class="d-flex justify-content-center my-4">
-			<OrangeButton text="Tout voir"></OrangeButton>
-		</router-link>
+		<RecipeBanner :img-link="require('../assets/background/bannerMojito.png')" :recipe="recipes.mojito"></RecipeBanner>
 	</div>
 </template>
 
@@ -34,10 +28,12 @@ import SquareImgLink from "@/components/SquareImgLink";
 import OrangeButton from "@/components/OrangeButton";
 import LastRecipe from "@/components/LastRecipe";
 import RecipesPresentation from "@/components/RecipesPresentation";
+import RecipeBanner from "@/components/RecipeBanner";
 
 export default {
-	name: 'Home',
+	name: 'test',
 	components: {
+		RecipeBanner,
 		RecipesPresentation,
 		LastRecipe,
 		OrangeButton,

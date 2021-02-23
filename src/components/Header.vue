@@ -1,0 +1,41 @@
+<template>
+<b-navbar class="d-flex justify-content-between mx-2 py-2">
+	<b-navbar-brand href="/">
+		<img src="../assets/shake-typo.png" alt="Shake!" style="width: 5rem;">
+	</b-navbar-brand>
+		<b-navbar-nav class="ml-auto">
+		<b-nav-form class="position-relative">
+			<b-form-input role="search" size="sm" class="search text-white" placeholder="Rechercher"></b-form-input>
+			<b-icon role="button" icon="search" variant="light"  class="position-absolute icon-search"></b-icon>
+		</b-nav-form>
+	</b-navbar-nav>
+
+
+</b-navbar>
+</template>
+
+<script>
+export default {
+	name: "Header"
+}
+</script>
+
+<style scoped>
+.search, .search:focus{
+	background-color: #313131;
+	border: none;
+	border-radius: 20px;
+	width: 50vw;
+}
+.search::placeholder{
+	color: white;
+}
+
+.icon-search{
+	right: 1rem;
+	transform: scaleX(-1);
+	-moz-transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+	-ms-transform: scaleX(-1);
+}
+</style>
