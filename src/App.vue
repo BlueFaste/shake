@@ -1,18 +1,23 @@
 <template>
   <div id="app">
 		<Header></Header>
-
     <router-view class="mx-4 mt-4"/>
-  </div>
+		<Footer></Footer>
+
+	</div>
 </template>
 
 <script>
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+
 
 export default {
 	name: 'Home',
 	components: {
 		Header,
+		Footer,
+
 	},
 	data(){
 		return{

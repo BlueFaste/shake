@@ -25,7 +25,6 @@
 		<router-link to="" class="d-flex justify-content-center my-4">
 			<OrangeButton text="Tout voir"></OrangeButton>
 		</router-link>
-		<Footer></Footer>
 	</div>
 </template>
 
@@ -35,12 +34,10 @@ import SquareImgLink from "@/components/SquareImgLink";
 import OrangeButton from "@/components/OrangeButton";
 import LastRecipe from "@/components/LastRecipe";
 import RecipesPresentation from "@/components/RecipesPresentation";
-import Footer from "@/components/Footer";
 
 export default {
 	name: 'Home',
 	components: {
-		Footer,
 		RecipesPresentation,
 		LastRecipe,
 		OrangeButton,
