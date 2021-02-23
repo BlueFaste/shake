@@ -48,9 +48,17 @@
 	font-family: Montserrat;
 	src: url("assets/font/Montserrat-Regular.ttf");
 }
+@font-face {
+	font-family: Montserrat-bold;
+	src: url("assets/font/Montserrat-Bold.ttf");
+}
 
-.DM-Serif-Display{
+.Montserrat{
 	font-family: Montserrat, sans-serif;
+}
+
+.Montserrat-bold{
+	font-family: Montserrat-bold, sans-serif;
 }
 
 *{
