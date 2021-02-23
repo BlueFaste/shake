@@ -1,5 +1,5 @@
 <template>
-	<div class="position-relative my-4 d-flex justify-content-center">
+	<div class="position-relative my-2 d-flex justify-content-center">
 		<router-link :to="recipe.link">
 			<div class="position-relative content-box d-flex">
 				<img alt='' :src="imgLink" class="img-shadow">
