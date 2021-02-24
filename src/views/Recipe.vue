@@ -16,9 +16,9 @@
 							</ul>
 						</div>
 						<div class="order-2">
-							<h3>Jus :</h3>
+							<h3>Softs :</h3>
 							<ul>
-								<li  v-for="ingredient in recipe.ingredient.juice" :key="ingredient">{{ingredient}}</li>
+								<li  v-for="ingredient in recipe.ingredient.soft" :key="ingredient">{{ingredient}}</li>
 							</ul>
 						</div>
 						<div class="order-1">
