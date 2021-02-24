@@ -1,8 +1,10 @@
 <template>
 	<div>
-		<div id="app" v-if="mobile">
-			<Header></Header>
-			<router-view class="mx-4 mt-4"/>
+		<div id="app" class=" d-flex flex-column justify-content-between" v-if="mobile">
+			<div>
+				<Header></Header>
+				<router-view class="mx-4 mt-4"/>
+			</div>
 			<Footer></Footer>
 		</div>
 
@@ -63,6 +65,7 @@ export default {
   /*text-align: center;*/
 
 	background-color: #1C1C1C;
+	min-height: 100vh;
 
 }
 
