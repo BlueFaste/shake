@@ -12,7 +12,10 @@
 					</div>
 					<div>
 						<ul class="pl-4 mt-2">
-							<li v-for="el in part.array" :key="el" class="d-flex justify-content-between align-items-center"> {{el}} <span class="line mr-4 ml-2"> </span> </li>
+							<li v-for="el in part.array" :key="el" class="d-flex justify-content-between align-items-center  mr-4"> {{el}}
+								<span class="line ml-2"> </span>
+								<b-icon role="button" icon="x" variant="secondary"  class="icon-cross" @click="deleteItem(el, part.array)"></b-icon>
+							</li>
 						</ul>
 					</div>
 					<p v-if="part.alcohol" class="text-buy-alcohol">Pas d'alcools ? Achetez-en <a href="https://sites.google.com/view/erwinwebsite/accueil" target="_blank">ici</a> !</p>
@@ -45,7 +48,18 @@ export default {
 				part.array.push(part.newValue)
 				part.newValue=''
 			}
-		}
+		},
+		deleteItem(el, array){
+			// console.log(el)
+			for (let item in array){
+				if (array[item] == el){
+					// console.log(el, item)
+					array.splice(item,1)
+					break
+				}
+			}
+		},
+
 	}
 }
 </script>
