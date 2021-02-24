@@ -4,6 +4,7 @@ import { test } from './test'
 import { squareImgLink } from './squareImgLink'
 import { recipes } from './recipes'
 import { findYourCocktail} from "@/store/findYourCocktail";
+import { suggestYourCocktail } from "@/store/suggestYourCocktail";
 
 Vue.use(Vuex)
 
@@ -19,6 +20,7 @@ export default new Vuex.Store({
     squareImgLink,
     recipes,
     findYourCocktail,
+    suggestYourCocktail
 
   }
 })

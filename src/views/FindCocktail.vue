@@ -1,13 +1,13 @@
 <template>
 	<div>
-		<RecipeBanner :img-link="require('../assets/background/findCocktailBanner.png')" :recipe="recipes.findCocktail"></RecipeBanner>
+		<RecipeBanner :img-link="require('../assets/background/findCocktailBanner.png')" :recipe="infoPage"></RecipeBanner>
 		<div class="my-4">
 			<p>Aenean eget mattis lectus. Proin id sollicitudin nisi. Nullam vitae diam vestibulum, pulvinar nulla nen.</p>
 			<div>
 				<div v-for="part in items" :key="part.title">
 					<h2 class="Montserrat-bold">{{ part.title}} :</h2>
 					<div class="position-relative">
-						<b-form-input role="search" size="sm" class="search text-white" :placeholder="part.placeholder" v-model="part.newValue" @keypress.enter="addItem(part)"></b-form-input>
+						<b-form-input  size="sm" class="search text-white" :placeholder="part.placeholder" v-model="part.newValue" @keypress.enter="addItem(part)"></b-form-input>
 						<b-icon role="button" icon="plus" variant="light"  class="position-absolute icon-search" @click="addItem(part)"></b-icon>
 					</div>
 					<div>
@@ -34,7 +34,7 @@ export default {
 	components: {OrangeButton, RecipeBanner},
 	data(){
 		return{
-			recipes:this.$store.state.recipes,
+			infoPage: this.$store.state.findYourCocktail.infoPage,
 			items: this.$store.state.findYourCocktail.yourItems,
 		}
 	},
