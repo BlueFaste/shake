@@ -3,12 +3,15 @@ export const recipes = {
 		allRecipes: {
 			name:'Toutes nos recettes',
 		},
+		findCocktail:{
+			name: 'Trouve ton coctail'
+		},
 		strawberryParadise: {
 			name: 'Strawberry Paradise',
 			desc:'Aenean eget mattis lectus. Proin id sollicitudin nisi. Nullam vitae diam vestibulum, pulvinar nulla nec, pellentesque magna. Aenean varius ut lacus laoreet sollicitudin. Morbi et tortor rutrum, rutrum metus sit amet, ornare ligula. Quisque semper sapien a est vestibulum, eu porttitor velit rhoncus. Phasellus nibh orci, facilisis vel elit eu, feugiat pulvinar ipsum. Praesent at magna augue.',
 			ingredient:{
 				alcohol:['4cl de rhum blanc'],
-				juice : ['1 eau gazeuse', '2cl de sirop de sucre de canne'],
+				soft : ['1 eau gazeuse', '2cl de sirop de sucre de canne'],
 				other:['6 feuilles de menthe', '1/2 citron vert', '10 glaçons']
 			},
 			link:'/recette/strawberryParadise'
@@ -18,7 +21,7 @@ export const recipes = {
 			desc:'Aenean eget mattis lectus. Proin id sollicitudin nisi. Nullam vitae diam vestibulum, pulvinar nulla nec, pellentesque magna. Aenean varius ut lacus laoreet sollicitudin. Morbi et tortor rutrum, rutrum metus sit amet, ornare ligula. Quisque semper sapien a est vestibulum, eu porttitor velit rhoncus. Phasellus nibh orci, facilisis vel elit eu, feugiat pulvinar ipsum. Praesent at magna augue.',
 			ingredient:{
 				alcohol:['4cl de rhum blanc'],
-				juice : ['1 eau gazeuse', '2cl de sirop de sucre de canne'],
+				soft : ['1 eau gazeuse', '2cl de sirop de sucre de canne'],
 				other:['6 feuilles de menthe', '1/2 citron vert', '10 glaçons']
 			},
 			step:[
@@ -71,7 +74,7 @@ export const recipes = {
 				desc:'Aenean eget mattis lectus. Proin id sollicitudin nisi. Nullam vitae diam vestibulum, pulvinar nulla nec, pellentesque magna. Aenean varius ut lacus laoreet sollicitudin. Morbi et tortor rutrum, rutrum metus sit amet, ornare ligula. Quisque semper sapien a est vestibulum, eu porttitor velit rhoncus. Phasellus nibh orci, facilisis vel elit eu, feugiat pulvinar ipsum. Praesent at magna augue.',
 				ingredient:{
 					alcohol:['4cl de rhum blanc'],
-					juice : ['1 eau gazeuse', '2cl de sirop de sucre de canne'],
+					soft : ['1 eau gazeuse', '2cl de sirop de sucre de canne'],
 					other:['6 feuilles de menthe', '1/2 citron vert', '10 glaçons']
 				},
 				link:'/recette/pinaColada'
@@ -81,7 +84,7 @@ export const recipes = {
 				desc:'Aenean eget mattis lectus. Proin id sollicitudin nisi. Nullam vitae diam vestibulum, pulvinar nulla nec, pellentesque magna. Aenean varius ut lacus laoreet sollicitudin. Morbi et tortor rutrum, rutrum metus sit amet, ornare ligula. Quisque semper sapien a est vestibulum, eu porttitor velit rhoncus. Phasellus nibh orci, facilisis vel elit eu, feugiat pulvinar ipsum. Praesent at magna augue.',
 				ingredient:{
 					alcohol:['4cl de rhum blanc'],
-					juice : ['1 eau gazeuse', '2cl de sirop de sucre de canne'],
+					soft : ['1 eau gazeuse', '2cl de sirop de sucre de canne'],
 					other:['6 feuilles de menthe', '1/2 citron vert', '10 glaçons']
 				},
 				link:'/recette/americano'
@@ -91,7 +94,7 @@ export const recipes = {
 			desc:'Aenean eget mattis lectus. Proin id sollicitudin nisi. Nullam vitae diam vestibulum, pulvinar nulla nec, pellentesque magna. Aenean varius ut lacus laoreet sollicitudin. Morbi et tortor rutrum, rutrum metus sit amet, ornare ligula. Quisque semper sapien a est vestibulum, eu porttitor velit rhoncus. Phasellus nibh orci, facilisis vel elit eu, feugiat pulvinar ipsum. Praesent at magna augue.',
 			ingredient:{
 				alcohol:['4cl de rhum blanc'],
-				juice : ['1 eau gazeuse', '2cl de sirop de sucre de canne'],
+				soft : ['1 eau gazeuse', '2cl de sirop de sucre de canne'],
 				other:['6 feuilles de menthe', '1/2 citron vert', '10 glaçons']
 			},
 			link:'/recette/mojitoFramboise'
@@ -101,7 +104,7 @@ export const recipes = {
 			desc:'Aenean eget mattis lectus. Proin id sollicitudin nisi. Nullam vitae diam vestibulum, pulvinar nulla nec, pellentesque magna. Aenean varius ut lacus laoreet sollicitudin. Morbi et tortor rutrum, rutrum metus sit amet, ornare ligula. Quisque semper sapien a est vestibulum, eu porttitor velit rhoncus. Phasellus nibh orci, facilisis vel elit eu, feugiat pulvinar ipsum. Praesent at magna augue.',
 			ingredient:{
 				alcohol:['4cl de rhum blanc'],
-				juice : ['1 eau gazeuse', '2cl de sirop de sucre de canne'],
+				soft : ['1 eau gazeuse', '2cl de sirop de sucre de canne'],
 				other:['6 feuilles de menthe', '1/2 citron vert', '10 glaçons']
 			},
 			link:'/recette/mojitoCubain'
@@ -111,7 +114,7 @@ export const recipes = {
 				desc:'Aenean eget mattis lectus. Proin id sollicitudin nisi. Nullam vitae diam vestibulum, pulvinar nulla nec, pellentesque magna. Aenean varius ut lacus laoreet sollicitudin. Morbi et tortor rutrum, rutrum metus sit amet, ornare ligula. Quisque semper sapien a est vestibulum, eu porttitor velit rhoncus. Phasellus nibh orci, facilisis vel elit eu, feugiat pulvinar ipsum. Praesent at magna augue.',
 				ingredient:{
 					alcohol:['4cl de rhum blanc'],
-					juice : ['1 eau gazeuse', '2cl de sirop de sucre de canne'],
+					soft : ['1 eau gazeuse', '2cl de sirop de sucre de canne'],
 					other:['6 feuilles de menthe', '1/2 citron vert', '10 glaçons']
 				},
 				link:'/recette/aperolSpritz'
@@ -121,7 +124,7 @@ export const recipes = {
 				desc:'Aenean eget mattis lectus. Proin id sollicitudin nisi. Nullam vitae diam vestibulum, pulvinar nulla nec, pellentesque magna. Aenean varius ut lacus laoreet sollicitudin. Morbi et tortor rutrum, rutrum metus sit amet, ornare ligula. Quisque semper sapien a est vestibulum, eu porttitor velit rhoncus. Phasellus nibh orci, facilisis vel elit eu, feugiat pulvinar ipsum. Praesent at magna augue.',
 				ingredient:{
 					alcohol:['4cl de rhum blanc'],
-					juice : ['1 eau gazeuse', '2cl de sirop de sucre de canne'],
+					soft : ['1 eau gazeuse', '2cl de sirop de sucre de canne'],
 					other:['6 feuilles de menthe', '1/2 citron vert', '10 glaçons']
 				},
 				link:'/recette/caipirinha'
@@ -131,7 +134,7 @@ export const recipes = {
 				desc:'Aenean eget mattis lectus. Proin id sollicitudin nisi. Nullam vitae diam vestibulum, pulvinar nulla nec, pellentesque magna. Aenean varius ut lacus laoreet sollicitudin. Morbi et tortor rutrum, rutrum metus sit amet, ornare ligula. Quisque semper sapien a est vestibulum, eu porttitor velit rhoncus. Phasellus nibh orci, facilisis vel elit eu, feugiat pulvinar ipsum. Praesent at magna augue.',
 				ingredient:{
 					alcohol:['4cl de rhum blanc'],
-					juice : ['1 eau gazeuse', '2cl de sirop de sucre de canne'],
+					soft : ['1 eau gazeuse', '2cl de sirop de sucre de canne'],
 					other:['6 feuilles de menthe', '1/2 citron vert', '10 glaçons']
 				},
 				link:'/recette/margarita'
