@@ -2,7 +2,7 @@
 	<div class="home">
 		<h1>Bienvenue sur Shake !</h1>
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rutrum nisi ex, nec posuere odio pretium vel. Duis tincidunt velit nec lectus interdum, quis volutpat tellus tempor. Aliquam feugiat velit consequat blandit interdum. Integer non enim dolor.</p>
-		<router-link to="" class="d-flex justify-content-end my-4">
+		<router-link to="/findyourcocktail" class="d-flex justify-content-end my-4">
 			<OrangeButton text="Trouve ton cocktail"></OrangeButton>
 		</router-link>
 		<SquareImgLink :data="data.ourRecipes" :imgLink="require('../assets/background/dylan-gillis-3e_tXW5O3GQ-unsplash.png')"></SquareImgLink>
