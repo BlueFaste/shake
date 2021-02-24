@@ -1,7 +1,9 @@
 <template>
 <b-navbar class="d-flex justify-content-between mx-2 py-2">
-	<b-navbar-brand href="/">
-		<img src="../assets/shake-typo.png" alt="Shake!" style="width: 5rem;">
+	<b-navbar-brand >
+		<router-link to="/">
+			<img src="../assets/shake-typo.png" alt="Shake!" style="width: 5rem;">
+		</router-link>
 	</b-navbar-brand>
 		<b-navbar-nav class="ml-auto">
 		<b-nav-form class="position-relative">

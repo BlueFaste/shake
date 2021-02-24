@@ -30,6 +30,16 @@ const routes = [
     name: 'AllRecipes',
     component: () => import(/* webpackChunkName: "about" */ '../views/AllRecipes.vue')
   },
+  {
+    path: '/findyourcocktail',
+    name: 'FindYourCocktail',
+    component: () => import(/* webpackChunkName: "about" */ '../views/FindCocktail.vue')
+  },
+  {
+    path: '/suggestyourcocktail',
+    name: 'SuggestYourCocktail',
+    component: () => import(/* webpackChunkName: "about" */ '../views/SuggestCocktail.vue')
+  },
 ]
 
 const router = new VueRouter({

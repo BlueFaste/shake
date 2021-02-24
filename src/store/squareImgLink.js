@@ -6,7 +6,7 @@ export const squareImgLink = {
 			img:'../assets/background/dylan-gillis-3e_tXW5O3GQ-unsplash.png',
 		},
 		proposYourRecipes:{
-			link:'/about',
+			link:'/suggestyourcocktail',
 			text:'Propose ton cocktail',
 			img:'../assets/background/timur-romanov-GsavR7VMkpk-unsplash.png',
 		},
