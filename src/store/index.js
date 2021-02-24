@@ -6,6 +6,7 @@ import { recipes } from './recipes'
 import { findYourCocktail} from "@/store/findYourCocktail";
 import { suggestYourCocktail } from "@/store/suggestYourCocktail";
 import { search } from "@/store/search";
+import { contact } from "@/store/contact";
 
 Vue.use(Vuex)
 
@@ -22,7 +23,8 @@ export default new Vuex.Store({
     recipes,
     findYourCocktail,
     suggestYourCocktail,
-    search
+    search,
+    contact
 
   }
 })
