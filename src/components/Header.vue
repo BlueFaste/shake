@@ -7,8 +7,10 @@
 	</b-navbar-brand>
 		<b-navbar-nav class="ml-auto">
 		<b-nav-form class="position-relative">
-			<b-form-input role="search" size="sm" class="search text-white" placeholder="Rechercher"></b-form-input>
-			<b-icon role="button" icon="search" variant="light"  class="position-absolute icon-search"></b-icon>
+			<b-form-input role="search" size="sm" class="search text-white" :placeholder="search.placeholder" v-model="search.searchText" @keypress.enter="lauchSearch"></b-form-input>
+			<router-link to="/search">
+				<b-icon role="button" icon="search" variant="light"  class="position-absolute icon-search"></b-icon>
+			</router-link>
 		</b-nav-form>
 	</b-navbar-nav>
 
@@ -18,7 +20,12 @@
 
 <script>
 export default {
-	name: "Header"
+	name: "Header",
+	data(){
+		return{
+			search: this.$store.state.search
+		}
+	},
 }
 </script>
 
@@ -31,10 +38,12 @@ export default {
 }
 .search::placeholder{
 	color: white;
+	opacity: 0.5;
 }
 
 .icon-search{
 	right: 1rem;
+	bottom: 0.5rem;
 	transform: scaleX(-1);
 	-moz-transform: scaleX(-1);
 	-webkit-transform: scaleX(-1);

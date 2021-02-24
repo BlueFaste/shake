@@ -16,6 +16,11 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   },
   {
+    path: '/contact',
+    name: 'Contact',
+    component: () => import(/* webpackChunkName: "about" */ '../views/Contact.vue')
+  },
+  {
     path: '/test',
     name: 'test',
     component: () => import(/* webpackChunkName: "about" */ '../views/test.vue')
@@ -39,6 +44,21 @@ const routes = [
     path: '/suggestyourcocktail',
     name: 'SuggestYourCocktail',
     component: () => import(/* webpackChunkName: "about" */ '../views/SuggestCocktail.vue')
+  },
+  {
+    path: '/search',
+    name: 'Search',
+    component: () => import(/* webpackChunkName: "about" */ '../views/Search.vue')
+  },
+  {
+    path: '*',
+    name: '404',
+    component: () => import(/* webpackChunkName: "about" */ '../views/404.vue')
+  },
+  {
+    path: '/pc/',
+    name: 'HomePc',
+    component: () => import(/* webpackChunkName: "about" */ '../views/pc/Home.vue')
   },
 ]
 

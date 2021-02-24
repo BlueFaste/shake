@@ -1,8 +1,16 @@
 <template>
-  <div id="app">
-		<Header></Header>
-    <router-view class="mx-4 mt-4"/>
-		<Footer></Footer>
+	<div>
+		<div id="app" class=" d-flex flex-column justify-content-between" v-if="mobile">
+			<div>
+				<Header></Header>
+				<router-view class="mx-4 mt-4"/>
+			</div>
+			<Footer></Footer>
+		</div>
+
+		<div v-else id="pc">
+			<router-view class="px-4 pt-4"/>
+		</div>
 
 	</div>
 </template>
@@ -19,8 +27,33 @@ export default {
 		Footer,
 
 	},
+	data(){
+		return{
+			mobile: false,
+		}
+	},
+	mounted() {
+		this.verifUserAgent()
+	},
 	updated() {
 		window.scrollTo(0,0)
+		console.log('test',navigator.userAgent)
+		let userAgent = navigator.userAgent
+		this.mobile = userAgent.includes('Mobile')
+		console.log(this.mobile)
+		// this.verifUserAgent()
+
+	},
+	methods:{
+		verifUserAgent(){
+			console.log('test',navigator.userAgent)
+			let userAgent = navigator.userAgent
+			this.mobile = userAgent.includes('Mobile')
+			console.log(this.mobile)
+			if(!this.mobile){
+				this.$router.push({name:'HomePc'})
+			}
+		}
 	}
 }
 </script>
@@ -32,6 +65,16 @@ export default {
   /*text-align: center;*/
 
 	background-color: #1C1C1C;
+	min-height: 100vh;
+
+}
+
+#pc {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /*text-align: center;*/
+
+	background-color: black;
 
 }
 
