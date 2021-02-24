@@ -1,7 +1,7 @@
 export const squareImgLink = {
 	state: () => ({
 		ourRecipes:{
-			link:'/about',
+			link:'/recettes/all',
 			text:'Nos recettes',
 			img:'../assets/background/dylan-gillis-3e_tXW5O3GQ-unsplash.png',
 		},

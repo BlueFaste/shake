@@ -37,12 +37,21 @@
 		</div>
 
 		<div class="etape-recette disable" id="etape-recette">
-			<img src="../assets/background/recipeMojito.png" alt="Vidéo de la recette" class="video-recipe" @click="closeSteps">
+			<img src="../assets/background/recipeMojito.png" alt="Vidéo de la recette" class="video-recipe">
 			<div class="mx-4 mt-4">
-				<h2>Étapes</h2>
+				<div class="d-flex justify-content-between">
+					<h2>Étapes</h2>
+					<b-icon class="h2" style="cursor: pointer;" icon="X" @click="closeSteps" role="button"></b-icon>
+				</div>
 				<ul>
-					<li v-for="etape in recipe.step" :key="etape.n">
-						<h3><span style="color: #F6A31E" class="DM-Serif-Display">{{ etape.n}}.</span> {{etape.title}}</h3>
+					<li v-for="etape in recipe.step" :key="etape.n" class="mb-4">
+						<div class="d-flex align-items-center">
+						<h3 class="m-0">
+							<span style="color: #F6A31E" class="DM-Serif-Display">{{ etape.n}}.</span>
+							{{etape.title}}</h3>
+							<a v-if="etape.alcohol" href="https://www.lilianbeillard.fr/" target="_blank" class="btn btn-secondary button-buy-alcohol Montserrat">Achetez-en</a>
+
+						</div>
 						<p class="ml-4">{{etape.desc}}</p>
 					</li>
 				</ul>
@@ -77,6 +86,7 @@ export default {
 			stepRecipe.classList.remove('disable')
 			stepRecipe = document.getElementById('etape-recette')
 			console.log(stepRecipe)
+			// window.scrollBy(0,-100)
 		},
 	closeSteps(){
 			console.log('go')
@@ -131,5 +141,13 @@ li{
 	width: 100vw;
 }
 
+.button-buy-alcohol{
+	background-color: #404040;
+	border-radius: 20px;
+	border: none;
+	margin-left: 1rem;
+	padding: 0 1rem;
+	font-size: 3.5vw;
+}
 
 </style>
