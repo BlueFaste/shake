@@ -246,6 +246,7 @@ export default {
 .search::placeholder{
 	color: white;
 	font-size: 0.8rem;
+	opacity: 0.5;
 }
 
 .icon-search{

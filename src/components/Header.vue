@@ -38,6 +38,7 @@ export default {
 }
 .search::placeholder{
 	color: white;
+	opacity: 0.5;
 }
 
 .icon-search{
