@@ -35,7 +35,11 @@ export default {
 	},
 	updated() {
 		window.scrollTo(0,0)
-		this.verifUserAgent()
+		console.log('test',navigator.userAgent)
+		let userAgent = navigator.userAgent
+		this.mobile = userAgent.includes('Mobile')
+		console.log(this.mobile)
+		// this.verifUserAgent()
 
 	},
 	methods:{
