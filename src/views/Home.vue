@@ -16,13 +16,13 @@
 				<RecipesPresentation :recipe="recipes.margarita" :imgLink="require('../assets/background/margarita.png')"></RecipesPresentation>
 				<RecipesPresentation :recipe="recipes.americano" :imgLink="require('../assets/background/americano.png')"></RecipesPresentation>
 			</div>
-			<div class="ml-1">
+			<div class="ml-2">
 				<RecipesPresentation :recipe="recipes.pinaColada" :imgLink="require('../assets/background/pinaColoda.png')"></RecipesPresentation>
 				<RecipesPresentation :recipe="recipes.caipirinha" :imgLink="require('../assets/background/caipiranha.png')"></RecipesPresentation>
 				<RecipesPresentation :recipe="recipes.aperolSpritz" :imgLink="require('../assets/background/aperolSpritz.png')"></RecipesPresentation>
 			</div>
 		</div>
-		<router-link to="" class="d-flex justify-content-center my-4">
+		<router-link to="/recettes/all" class="d-flex justify-content-center my-4">
 			<OrangeButton text="Tout voir"></OrangeButton>
 		</router-link>
 	</div>

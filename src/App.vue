@@ -13,19 +13,15 @@ import Footer from "@/components/Footer";
 
 
 export default {
-	name: 'Home',
+	name: 'App',
 	components: {
 		Header,
 		Footer,
 
 	},
-	data(){
-		return{
-			data: this.$store.state.squareImgLink,
-			recipes: this.$store.state.recipes,
-
-		}
-	},
+	updated() {
+		window.scrollTo(0,0)
+	}
 }
 </script>
 
