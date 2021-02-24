@@ -40,6 +40,11 @@ const routes = [
     name: 'SuggestYourCocktail',
     component: () => import(/* webpackChunkName: "about" */ '../views/SuggestCocktail.vue')
   },
+  {
+    path: '/pc/',
+    name: 'HomePc',
+    component: () => import(/* webpackChunkName: "about" */ '../views/pc/Home.vue')
+  },
 ]
 
 const router = new VueRouter({
