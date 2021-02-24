@@ -3,9 +3,6 @@ export const recipes = {
 		allRecipes: {
 			name:'Toutes nos recettes',
 		},
-		findCocktail:{
-			name: 'Trouve ton coctail'
-		},
 		strawberryParadise: {
 			name: 'Strawberry Paradise',
 			desc:'Aenean eget mattis lectus. Proin id sollicitudin nisi. Nullam vitae diam vestibulum, pulvinar nulla nec, pellentesque magna. Aenean varius ut lacus laoreet sollicitudin. Morbi et tortor rutrum, rutrum metus sit amet, ornare ligula. Quisque semper sapien a est vestibulum, eu porttitor velit rhoncus. Phasellus nibh orci, facilisis vel elit eu, feugiat pulvinar ipsum. Praesent at magna augue.',

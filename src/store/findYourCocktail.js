@@ -1,5 +1,8 @@
 export const findYourCocktail = {
 	state: () => ({
+		infoPage:{
+			name: 'Trouve ton cocktail'
+		},
 		yourItems:{
 			alcohol:{
 				title:'Alcools',
