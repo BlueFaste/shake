@@ -13,19 +13,14 @@ import Footer from "@/components/Footer";
 
 
 export default {
-	name: 'Home',
+	name: 'App',
 	components: {
 		Header,
 		Footer,
 
 	},
-	data(){
-		return{
-			test: this.$store.state.test.test,
-			data: this.$store.state.squareImgLink,
-			recipes: this.$store.state.recipes,
-
-		}
+	updated() {
+		window.scrollTo(0,0)
 	}
 }
 </script>
@@ -96,4 +91,5 @@ h1{
 h2{
 	font-size: 7vw !important;
 }
+
 </style>

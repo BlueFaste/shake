@@ -22,4 +22,11 @@ export default {
 	border: none;
 }
 
+.orange-button:focus, .orange-button:hover{
+	background-color: #D98601 !important;
+}
+.orange-button:active{
+	background-color: #B16D00 !important;
+}
+
 </style>
