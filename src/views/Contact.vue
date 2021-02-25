@@ -4,24 +4,29 @@
 									:recipe="contact.infoPage"></RecipeBanner>
 		<section class="my-4">
 			<p>Aenean eget mattis lectus. Proin id sollicitudin nisi. Nullam vitae diam vestibulum, pulvinar nulla nen.</p>
-			<div class="my-4">
-				<h2 class="Montserrat-bold">Informations personnelles :</h2>
+			<p class="text-obligatoire">Les champs suivis d'un <span class="text-danger star-obligatoire">*</span> sont obligatoire</p>
+			<b-form class="my-4">
+				<h2 class="Montserrat-bold">Informations personnelles <span class="text-danger star-obligatoire">*</span> :</h2>
 				<div class="position-relative">
+					<label for="authorName" class="sr-only">Prénom ou pseudo <span class="text-danger star-obligatoire">*</span></label>
 					<b-form-input size="sm"
+												id="authorName"
 												class="search text-white my-2"
 												placeholder="Prénom ou pseudo"
 												v-model="contact.authorName"></b-form-input>
+					<label for="authorEmail" class="sr-only">Email <span class="text-danger star-obligatoire">*</span></label>
 					<b-form-input size="sm"
+												id="authorEmail"
 												type="email"
 												class="search text-white my-2"
 												placeholder="E-mail"
 												v-model="contact.authorEmail"></b-form-input>
 				</div>
-			</div>
+			</b-form>
 			<div class="my-4">
-				<h2 class="Montserrat-bold">Votre message :</h2>
+				<h2><label class="Montserrat-bold" for="message">Votre message <span class="text-danger star-obligatoire">*</span></label> :</h2>
 				<div class="position-relative">
-					<b-form-textarea size="sm" class="search text-white my-2" placeholder="Bonjour, ..." rows="4" v-model="contact.message"></b-form-textarea>
+					<b-form-textarea size="sm" id="message" class="search text-white my-2" placeholder="Bonjour, ..." rows="4" v-model="contact.message"></b-form-textarea>
 				</div>
 			</div>
 		</section>
@@ -104,5 +109,13 @@ export default {
 	color: white;
 	font-size: 0.8rem;
 	opacity: 0.5;
+}
+
+.star-obligatoire{
+	font-size: 1rem;
+}
+
+.text-obligatoire{
+	font-size: 0.7rem;
 }
 </style>
