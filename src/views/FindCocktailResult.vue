@@ -1,5 +1,5 @@
 <template>
-	<main>
+	<main role="main">
 		<h1>Trouve ton cocktail</h1>
 		<section class="d-flex flex-wrap justify-content-around mt-4">
 		<h2 class="Montserrat">D'après vos ingrédients</h2>

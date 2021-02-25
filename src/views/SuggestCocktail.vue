@@ -1,5 +1,5 @@
 <template>
-	<main>
+	<main role="main">
 		<RecipeBanner :img-link="require('../assets/background/suggestYourCocktailbanner.png')"
 									:recipe="infoPage"></RecipeBanner>
 		<div class="my-4">

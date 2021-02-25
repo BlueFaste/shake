@@ -1,5 +1,5 @@
 <template>
-	<main>
+	<main role="main">
 		<RecipeBanner :img-link="require('../assets/background/ContactBanner.png')"
 									:recipe="contact.infoPage"></RecipeBanner>
 		<section class="my-4">

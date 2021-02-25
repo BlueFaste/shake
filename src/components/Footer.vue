@@ -1,5 +1,5 @@
 <template>
-	<footer class="d-flex justify-content-center">
+	<footer role="contentinfo" class="d-flex justify-content-center">
 		<p>
 			<router-link to="">CGU</router-link>
 			|

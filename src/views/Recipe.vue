@@ -1,5 +1,5 @@
 <template>
-	<main class="position-relative">
+	<main role="main" class="position-relative">
 		<div>
 			<RecipeBanner :img-link="require('../assets/background/bannerMojito.png')" :recipe="recipe"></RecipeBanner>
 			<p class="my-4">Aenean eget mattis lectus. Proin id sollicitudin nisi. Nullam vitae diam vestibulum, pulvinar

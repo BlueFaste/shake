@@ -1,5 +1,5 @@
 <template>
-	<main>
+	<main role="main">
 		<section class="d-flex flex-wrap justify-content-around">
 			<div class="mr-1">
 				<div style="width: 9rem">

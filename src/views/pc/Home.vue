@@ -1,5 +1,5 @@
 <template>
-	<main class="h-100-vh d-flex justify-content-center align-items-center flex-wrap">
+	<main role="main" class="h-100-vh d-flex justify-content-center align-items-center flex-wrap">
 		<router-link to="/">
 			<img src="../../assets/logo.png" alt="Shake!" style="width: 45vh;">
 		</router-link>

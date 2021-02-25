@@ -1,5 +1,5 @@
 <template>
-	<main class="error-container">
+	<main role="main" class="error-container">
 		<RecipeBanner :img-link="require('../assets/background/404Banner.png')" :recipe="data"></RecipeBanner>
 		<p class="mt-4">La page que vous recherchez n'existe pas :/ </p>
 		<p>Cliquez

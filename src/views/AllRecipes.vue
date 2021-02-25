@@ -1,5 +1,5 @@
 <template>
-	<main>
+	<main role="main">
 		<RecipeBanner :img-link="require('../assets/background/AllRecipesBanner.png')"
 									:recipe="recipes.allRecipes"></RecipeBanner>
 		<p class="mt-3 mb-0">

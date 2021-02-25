@@ -1,5 +1,5 @@
 <template>
-	<main class="home">
+	<main role="main" class="home">
 		<h1>Bienvenue sur Shake !</h1>
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rutrum nisi ex, nec posuere odio pretium vel.
 			Duis tincidunt velit nec lectus interdum, quis volutpat tellus tempor. Aliquam feugiat velit consequat blandit

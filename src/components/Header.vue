@@ -1,6 +1,6 @@
 <template>
-	<header>
-		<b-navbar class="d-flex justify-content-between mx-2 py-2">
+	<header role="banner">
+		<b-navbar role="navigation" class="d-flex justify-content-between mx-2 py-2">
 			<b-navbar-brand>
 				<router-link to="/">
 					<img src="../assets/shake-typo.png" alt="Shake!" style="width: 5rem;">
