@@ -1,6 +1,8 @@
 <template>
 	<main>
-		<section class="d-flex flex-wrap justify-content-around">
+		<h1>Trouve ton cocktail</h1>
+		<section class="d-flex flex-wrap justify-content-around mt-4">
+		<h2 class="Montserrat">D'après vos ingrédients</h2>
 			<div class="mr-1">
 				<RecipesPresentation :recipe="recipes.mojitoCubain" :imgLink="require('../assets/background/mojitoCubain.png')"></RecipesPresentation>
 				<RecipesPresentation :recipe="recipes.mojitoFramboise" :imgLink="require('../assets/background/MojitoFramboise.png')"></RecipesPresentation>
@@ -12,7 +14,7 @@
 		</section>
 
 		<div class="d-flex justify-content-center align-items-center flex-column">
-			<p class="mb-0 mt-5">Résultat associés</p>
+			<h2 class="mb-0 mt-5 Montserrat">Résultat associés</h2>
 			<section class="d-flex flex-wrap justify-content-around">
 				<div class="mr-1">
 					<RecipesPresentation :recipe="recipes.mojito" :imgLink="require('../assets/background/mojito.png')"></RecipesPresentation>
@@ -50,5 +52,8 @@ export default {
 </script>
 
 <style scoped>
+h2{
+	font-size: 1rem !important;
+}
 
 </style>
