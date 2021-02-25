@@ -41,6 +41,11 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/FindCocktail.vue')
   },
   {
+    path: '/findyourcocktail/result',
+    name: 'FindYourCocktailResult',
+    component: () => import(/* webpackChunkName: "about" */ '../views/FindCocktailResult.vue')
+  },
+  {
     path: '/suggestyourcocktail',
     name: 'SuggestYourCocktail',
     component: () => import(/* webpackChunkName: "about" */ '../views/SuggestCocktail.vue')
