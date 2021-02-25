@@ -24,8 +24,14 @@ export default {
 	opacity: 0.90;
 }
 
-h3 {
-	font-size: 5.7vw;
+@media (min-width:1024px ) {
+	img{
+		width: 11vw;
+	}
+
+	div .my-3{
+		margin: 2rem 0 !important;
+	}
 }
 
 </style>

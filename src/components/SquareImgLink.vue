@@ -29,4 +29,12 @@ export default {
 	opacity: 0.80;
 }
 
+
+
+@media (min-width:1024px ) {
+	div .my-4 {
+		margin: 0 0 1rem 0 !important;
+	}
+}
+
 </style>

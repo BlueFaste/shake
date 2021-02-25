@@ -1,6 +1,6 @@
 <template>
-	<div>
-		<div id="app" class=" d-flex flex-column justify-content-between" v-if="mobile">
+	<div class="princ-container">
+		<div id="app" v-if="mobile">
 			<div>
 				<Header></Header>
 				<router-view class="mx-4 mt-4"/>
@@ -29,36 +29,54 @@ export default {
 	},
 	data() {
 		return {
-			mobile: false,
+			mobile: true,
 		}
 	},
-	mounted() {
-		this.verifUserAgent()
-	},
-	updated() {
-		window.scrollTo(0, 0)
-		console.log('test', navigator.userAgent)
-		let userAgent = navigator.userAgent
-		this.mobile = userAgent.includes('Mobile')
-		console.log(this.mobile)
-		// this.verifUserAgent()
-
-	},
-	methods: {
-		verifUserAgent() {
-			console.log('test', navigator.userAgent)
-			let userAgent = navigator.userAgent
-			this.mobile = userAgent.includes('Mobile')
-			console.log(this.mobile)
-			if (!this.mobile) {
-				this.$router.push({name: 'HomePc'})
-			}
-		}
-	}
+	// mounted() {
+	// 	this.verifUserAgent()
+	// },
+	// updated() {
+	// 	window.scrollTo(0, 0)
+	// 	console.log('test', navigator.userAgent)
+	// 	let userAgent = navigator.userAgent
+	// 	this.mobile = userAgent.includes('Mobile')
+	// 	console.log(this.mobile)
+	// 	// this.verifUserAgent()
+	//
+	// },
+	// methods: {
+	// 	verifUserAgent() {
+	// 		console.log('test', navigator.userAgent)
+	// 		let userAgent = navigator.userAgent
+	// 		this.mobile = userAgent.includes('Mobile')
+	// 		console.log(this.mobile)
+	// 		if (!this.mobile) {
+	// 			this.$router.push({name: 'HomePc'})
+	// 		}
+	// 	}
+	// }
 }
 </script>
 
 <style>
+
+@media (min-width:1024px ) {
+	.princ-container{
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+		background-color: #3A3A3A;
+	}
+
+	#app{
+		width: 60vw;
+		box-shadow: 0 0 35px rgba(40, 40, 40, 85);
+		padding: 2rem;
+
+	}
+}
+
 #app {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -66,6 +84,8 @@ export default {
 
 	background-color: #1C1C1C;
 	min-height: 100vh;
+
+	font-size: 100%;
 
 }
 
@@ -129,11 +149,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-	font-size: 7vw !important;
+	font-size: 2rem !important;
 }
 
 h2 {
-	font-size: 7vw !important;
+	font-size: 1.5rem !important;
+}
+
+h3{
+	font-size: 1.25rem !important;
 }
 
 </style>
