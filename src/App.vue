@@ -1,6 +1,6 @@
 <template>
-	<div>
-		<div id="app" class=" d-flex flex-column justify-content-between" v-if="mobile">
+	<div class="princ-container">
+		<div id="app" v-if="mobile">
 			<div>
 				<Header></Header>
 				<router-view class="mx-4 mt-4"/>
@@ -27,70 +27,79 @@ export default {
 		Footer,
 
 	},
-	data(){
-		return{
-			mobile: false,
+	data() {
+		return {
+			mobile: true,
 		}
-	},
-	mounted() {
-		this.verifUserAgent()
 	},
 	updated() {
-		window.scrollTo(0,0)
-		console.log('test',navigator.userAgent)
-		let userAgent = navigator.userAgent
-		this.mobile = userAgent.includes('Mobile')
-		console.log(this.mobile)
-		// this.verifUserAgent()
-
+		window.scrollTo(0, 0)
 	},
-	methods:{
-		verifUserAgent(){
-			console.log('test',navigator.userAgent)
-			let userAgent = navigator.userAgent
-			this.mobile = userAgent.includes('Mobile')
-			console.log(this.mobile)
-			if(!this.mobile){
-				this.$router.push({name:'HomePc'})
-			}
-		}
-	}
 }
 </script>
 
 <style>
+
+@media (min-width:1024px ) {
+	.hidden-pc {
+		display: none !important;
+	}
+
+	.princ-container{
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+		background-color: #3A3A3A;
+	}
+
+	#app{
+		width: 60vw;
+		box-shadow: 0 0 35px rgba(40, 40, 40, 85);
+		padding: 2rem;
+
+	}
+}
+
+@media (max-width: 1024px) {
+	.hidden-portable {
+		display: none !important;
+	}
+}
+
 #app {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  /*text-align: center;*/
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	/*text-align: center;*/
 
 	background-color: #1C1C1C;
 	min-height: 100vh;
 
+	font-size: 100%;
+
 }
 
 #pc {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  /*text-align: center;*/
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	/*text-align: center;*/
 
 	background-color: black;
 
 }
 
 
-
-.content-box{
+.content-box {
 	box-sizing: content-box;
 }
 
-.img-shadow{
+.img-shadow {
 	box-shadow: 0 0 35px rgba(40, 40, 40, 85);
 	border-radius: 20px;
 }
 
-a{
-	color:white !important;
+a {
+	color: white !important;
 }
 
 @font-face {
@@ -98,7 +107,7 @@ a{
 	src: url("assets/font/DMSerifDisplay-Regular.ttf");
 }
 
-.DM-Serif-Display{
+.DM-Serif-Display {
 	font-family: 'DM Serif Display', sans-serif;
 }
 
@@ -106,33 +115,39 @@ a{
 	font-family: Montserrat;
 	src: url("assets/font/Montserrat-Regular.ttf");
 }
+
 @font-face {
 	font-family: Montserrat-bold;
 	src: url("assets/font/Montserrat-Bold.ttf");
 }
 
-.Montserrat{
+.Montserrat {
 	font-family: Montserrat, sans-serif;
 }
 
-.Montserrat-bold{
+.Montserrat-bold {
 	font-family: Montserrat-bold, sans-serif;
 }
 
-*{
+* {
 	font-family: Montserrat, sans-serif;
-	color:white;
+	color: white;
 }
 
-h1,h2,h3,h4,h5,h6{
+h1, h2, h3, h4, h5, h6 {
 	font-family: 'DM Serif Display', sans-serif;
 }
 
-h1{
-	font-size: 7vw !important;
+h1 {
+	font-size: 2rem !important;
 }
-h2{
-	font-size: 7vw !important;
+
+h2 {
+	font-size: 1.5rem !important;
+}
+
+h3{
+	font-size: 1.25rem !important;
 }
 
 </style>

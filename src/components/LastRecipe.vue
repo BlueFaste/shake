@@ -2,9 +2,8 @@
 	<div class="position-relative my-2 d-flex justify-content-center">
 		<router-link :to="recipe.link">
 			<div class="position-relative content-box d-flex">
-				<img alt='' :src="imgLink" class="img-shadow">
-				<h3 class="position-absolute ml-4 mt-2 text-white">{{recipe.name}}</h3>
-
+				<img aria-hidden="true" role="presentation" alt='' :src="imgLink" class="img-shadow">
+				<h3 class="position-absolute ml-4 mt-2 text-white">{{ recipe.name }}</h3>
 			</div>
 		</router-link>
 	</div>
@@ -13,7 +12,7 @@
 <script>
 export default {
 	name: "LastRecipe",
-	props:{
+	props: {
 		recipe: Object,
 		imgLink: String,
 	}
@@ -21,8 +20,8 @@ export default {
 </script>
 
 <style scoped>
-h3{
-font-size: 6.7vw;
+h3 {
+	font-size: 6.7vw;
 }
 
 </style>
