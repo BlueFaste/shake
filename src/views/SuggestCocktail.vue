@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<main>
 		<RecipeBanner :img-link="require('../assets/background/suggestYourCocktailbanner.png')"
 									:recipe="infoPage"></RecipeBanner>
 		<div class="my-4">
@@ -8,9 +8,9 @@
 				site.</p>
 			<p>Vous avez la possibilité de décider si vous souhaitez être crédité ou non.</p>
 			<div>
-				<div class="my-4">
-					<h2 class="Montserrat-bold">Informations personnelles :</h2>
-					<div class="position-relative">
+				<section class="my-4">
+					<article class="position-relative">
+						<h2 class="Montserrat-bold">Informations personnelles :</h2>
 						<b-form-input size="sm" class="search text-white my-2" placeholder="Prénom ou pseudo"
 													v-model="recette.authorName"></b-form-input>
 						<b-form-input size="sm" type="email" class="search text-white my-2" placeholder="E-mail"
@@ -25,15 +25,15 @@
 						>
 							Je souhaite être crédité pour mon cocktail
 						</b-form-checkbox>
-					</div>
-					<div class="my-4">
+					</article>
+					<article class="my-4">
 						<h2 class="Montserrat-bold">Le nom du cocktail :</h2>
 						<div class="position-relative">
 							<b-form-input size="sm" class="search text-white my-2" placeholder="Ex: Mojito Framboise"
 														v-model="recette.recipeName"></b-form-input>
 						</div>
-					</div>
-					<div class="my-4">
+					</article>
+					<article class="my-4">
 						<h2 class="Montserrat-bold">Les ingrédients :</h2>
 						<div v-for="part in recette.items" :key="part.title">
 							<h3 class="Montserrat-bold">{{ part.title }} :</h3>
@@ -66,8 +66,8 @@
 							<p v-if="part.alcohol" class="text-buy-alcohol">Pas d'alcools ? Achetez-en
 								<a href="https://sites.google.com/view/erwinwebsite/accueil" target="_blank">ici</a> !</p>
 						</div>
-					</div>
-					<div class="my-4">
+					</article>
+					<article class="my-4">
 						<h2 class="Montserrat-bold">La recette :</h2>
 						<div class="">
 							<b-form-input size="sm"
@@ -99,8 +99,8 @@
 								</li>
 							</ul>
 						</div>
-					</div>
-				</div>
+					</article>
+				</section>
 				<b-form-checkbox
 						id="checkbox-2"
 						v-model="recette.conditionGenerale"
@@ -144,7 +144,7 @@
 				</b-button>
 			</template>
 		</b-modal>
-	</div>
+	</main>
 </template>
 
 <script>

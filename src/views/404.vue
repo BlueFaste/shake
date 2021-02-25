@@ -1,12 +1,12 @@
 <template>
-	<div class="error-container">
+	<main class="error-container">
 		<RecipeBanner :img-link="require('../assets/background/404Banner.png')" :recipe="data"></RecipeBanner>
 		<p class="mt-4">La page que vous recherchez n'existe pas :/ </p>
 		<p>Cliquez
 			<router-link to="/">ici</router-link>
 			pour retourner à la page d'accueil.
 		</p>
-	</div>
+	</main>
 
 </template>
 

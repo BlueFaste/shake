@@ -1,27 +1,30 @@
 <template>
-	<b-navbar class="d-flex justify-content-between mx-2 py-2">
-		<b-navbar-brand>
-			<router-link to="/">
-				<img src="../assets/shake-typo.png" alt="Shake!" style="width: 5rem;">
-			</router-link>
-		</b-navbar-brand>
-		<b-navbar-nav class="ml-auto">
-			<b-nav-form class="position-relative">
-				<b-form-input role="search"
-											size="sm"
-											class="search text-white"
-											:placeholder="search.placeholder"
-											v-model="search.searchText"></b-form-input>
-				<router-link :to="`/search/${search.searchText}`">
-					<b-icon
-							role="button"
-							icon="search"
-							variant="light"
-							class="position-absolute icon-search"></b-icon>
+	<header>
+		<b-navbar class="d-flex justify-content-between mx-2 py-2">
+			<b-navbar-brand>
+				<router-link to="/">
+					<img src="../assets/shake-typo.png" alt="Shake!" style="width: 5rem;">
 				</router-link>
-			</b-nav-form>
-		</b-navbar-nav>
-	</b-navbar>
+			</b-navbar-brand>
+			<b-navbar-nav class="ml-auto">
+				<b-nav-form class="position-relative">
+					<b-form-input role="search"
+												size="sm"
+												class="search text-white"
+												:placeholder="search.placeholder"
+												v-model="search.searchText"></b-form-input>
+					<router-link :to="`/search/${search.searchText}`">
+						<b-icon
+								role="button"
+								icon="search"
+								variant="light"
+								class="position-absolute icon-search"></b-icon>
+					</router-link>
+				</b-nav-form>
+			</b-navbar-nav>
+		</b-navbar>
+	</header>
+
 </template>
 
 <script>

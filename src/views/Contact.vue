@@ -1,8 +1,8 @@
 <template>
-	<div>
+	<main>
 		<RecipeBanner :img-link="require('../assets/background/ContactBanner.png')"
 									:recipe="contact.infoPage"></RecipeBanner>
-		<div class="my-4">
+		<section class="my-4">
 			<p>Aenean eget mattis lectus. Proin id sollicitudin nisi. Nullam vitae diam vestibulum, pulvinar nulla nen.</p>
 			<div class="my-4">
 				<h2 class="Montserrat-bold">Informations personnelles :</h2>
@@ -24,7 +24,7 @@
 					<b-form-textarea size="sm" class="search text-white my-2" placeholder="Bonjour, ..." rows="4" v-model="contact.message"></b-form-textarea>
 				</div>
 			</div>
-		</div>
+		</section>
 
 		<div class="d-flex justify-content-center my-5" @click="sendMessage">
 			<OrangeButton text="Envoyer le message"></OrangeButton>
@@ -57,7 +57,7 @@
 			</template>
 		</b-modal>
 
-	</div>
+	</main>
 </template>
 
 <script>

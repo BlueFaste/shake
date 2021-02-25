@@ -1,11 +1,11 @@
 <template>
-	<div class="position-relative">
+	<main class="position-relative">
 		<div>
 			<RecipeBanner :img-link="require('../assets/background/bannerMojito.png')" :recipe="recipe"></RecipeBanner>
 			<p class="my-4">Aenean eget mattis lectus. Proin id sollicitudin nisi. Nullam vitae diam vestibulum, pulvinar
 				nulla nec, pellentesque magna. Aenean varius ut lacus laoreet sollicitudin. Morbi et tortor rutrum, rutrum metus
 				sit amet, ornare ligula. Quisque semper sapien a est vestibulum, eu porttitor velit rhoncus.</p>
-			<div class="my-4">
+			<section class="my-4">
 				<h2>Ingredients</h2>
 				<div class="d-flex justify-content-center">
 					<div class="d-flex flex-wrap justify-content-between">
@@ -35,10 +35,10 @@
 				<div class="d-flex justify-content-center my-4" @click.prevent="openSteps">
 					<OrangeButton text="C'est parti !"></OrangeButton>
 				</div>
-			</div>
+			</section>
 		</div>
 
-		<div class="etape-recette disable" id="etape-recette">
+		<section class="etape-recette disable" id="etape-recette">
 			<img src="../assets/background/recipeMojito.png" alt="Vidéo de la recette" class="video-recipe">
 			<div class="mx-4 mt-4">
 				<div class="d-flex justify-content-between">
@@ -59,9 +59,9 @@
 				</ul>
 
 			</div>
-		</div>
+		</section>
 
-	</div>
+	</main>
 </template>
 
 <script>

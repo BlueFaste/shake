@@ -1,10 +1,10 @@
 <template>
-	<div>
+	<main>
 		<RecipeBanner :img-link="require('../assets/background/findCocktailBanner.png')" :recipe="infoPage"></RecipeBanner>
-		<div class="my-4">
+		<section class="my-4">
 			<p>Aenean eget mattis lectus. Proin id sollicitudin nisi. Nullam vitae diam vestibulum, pulvinar nulla nen.</p>
 			<div>
-				<div v-for="part in items" :key="part.title">
+				<article v-for="part in items" :key="part.title">
 					<h2 class="Montserrat-bold">{{ part.title }} :</h2>
 					<div class="position-relative">
 						<b-form-input size="sm"
@@ -32,14 +32,14 @@
 					</div>
 					<p v-if="part.alcohol" class="text-buy-alcohol">Pas d'alcools ? Achetez-en
 						<a href="https://sites.google.com/view/erwinwebsite/accueil" target="_blank">ici</a> !</p>
-				</div>
+				</article>
 				<router-link to="/findyourcocktail/result" class="d-flex justify-content-center my-5">
 					<OrangeButton text="Trouve ton cocktail"></OrangeButton>
 				</router-link>
 			</div>
-		</div>
+		</section>
 
-	</div>
+	</main>
 </template>
 
 <script>

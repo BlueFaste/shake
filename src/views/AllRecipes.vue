@@ -1,11 +1,11 @@
 <template>
-	<div>
+	<main>
 		<RecipeBanner :img-link="require('../assets/background/AllRecipesBanner.png')"
 									:recipe="recipes.allRecipes"></RecipeBanner>
 		<p class="mt-3 mb-0">
 			Si vous avez besoin d'alcools, achetez-en <a href="https://carolinefassot.myportfolio.com/" target="_blank">ici</a>.
 		</p>
-		<div class="d-flex flex-wrap justify-content-around">
+		<section class="d-flex flex-wrap justify-content-around">
 			<div class="mr-1">
 				<RecipesPresentation :recipe="recipes.mojito" :imgLink="require('../assets/background/mojito.png')"></RecipesPresentation>
 				<RecipesPresentation :recipe="recipes.margarita" :imgLink="require('../assets/background/margarita.png')"></RecipesPresentation>
@@ -18,11 +18,11 @@
 				<RecipesPresentation :recipe="recipes.aperolSpritz" :imgLink="require('../assets/background/aperolSpritz.png')"></RecipesPresentation>
 				<RecipesPresentation :recipe="recipes.americano" :imgLink="require('../assets/background/americano.png')"></RecipesPresentation>
 			</div>
-		</div>
+		</section>
 		<div class="d-flex justify-content-center my-4">
 			<OrangeButton text="Charger plus +"></OrangeButton>
 		</div>
-	</div>
+	</main>
 </template>
 
 <script>

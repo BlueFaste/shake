@@ -1,5 +1,5 @@
 <template>
-	<div class="home">
+	<main class="home">
 		<h1>Bienvenue sur Shake !</h1>
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rutrum nisi ex, nec posuere odio pretium vel.
 			Duis tincidunt velit nec lectus interdum, quis volutpat tellus tempor. Aliquam feugiat velit consequat blandit
@@ -13,7 +13,7 @@
 		<LastRecipe :recipe="recipes.strawberryParadise"
 								:imgLink="require('../assets/background/strawberryParadise.png')"></LastRecipe>
 		<h2 class="Montserrat text-center mt-5 mb-0" style="font-size: 5vw !important;"> Les plus populaires</h2>
-		<div class="d-flex flex-wrap justify-content-around">
+		<section class="d-flex flex-wrap justify-content-around">
 			<div class="mr-1">
 				<RecipesPresentation :recipe="recipes.mojito" :imgLink="require('../assets/background/mojito.png')"></RecipesPresentation>
 				<RecipesPresentation :recipe="recipes.margarita" :imgLink="require('../assets/background/margarita.png')"></RecipesPresentation>
@@ -24,11 +24,11 @@
 				<RecipesPresentation :recipe="recipes.caipirinha" :imgLink="require('../assets/background/caipiranha.png')"></RecipesPresentation>
 				<RecipesPresentation :recipe="recipes.aperolSpritz" :imgLink="require('../assets/background/aperolSpritz.png')"></RecipesPresentation>
 			</div>
-		</div>
+		</section>
 		<router-link to="/recettes/all" class="d-flex justify-content-center my-4">
 			<OrangeButton text="Tout voir"></OrangeButton>
 		</router-link>
-	</div>
+	</main>
 </template>
 
 <script>
