@@ -104,10 +104,6 @@ h2{
 		flex-direction: column-reverse;
 	}
 
-	.hidden-pc{
-		display: none !important;
-	}
-
 	.dernière-recette{
 		display: flex;
 		justify-content: space-between;
@@ -134,8 +130,6 @@ h2{
 		flex-direction: column;
 	}
 
-	.hidden-portable{
-		display: none !important;
-	}
+
 }
 </style>

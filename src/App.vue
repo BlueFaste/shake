@@ -61,6 +61,10 @@ export default {
 <style>
 
 @media (min-width:1024px ) {
+	.hidden-pc {
+		display: none !important;
+	}
+
 	.princ-container{
 		display: flex;
 		justify-content: center;
@@ -74,6 +78,12 @@ export default {
 		box-shadow: 0 0 35px rgba(40, 40, 40, 85);
 		padding: 2rem;
 
+	}
+}
+
+@media (max-width: 1024px) {
+	.hidden-portable {
+		display: none !important;
 	}
 }
 
