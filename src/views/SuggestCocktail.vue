@@ -15,10 +15,10 @@
 						<b-form>
 							<h2 class="Montserrat-bold">Informations personnelles <span class="text-danger star-obligatoire">*</span> :</h2>
 							<label for="authorName" class="sr-only">Prénom ou pseudo <span class="text-danger star-obligatoire">*</span></label>
-							<b-form-input size="sm" class="search text-white my-2" placeholder="Prénom ou pseudo" id="authorName"
+							<b-form-input size="sm" class="search text-white my-2" placeholder="Prénom ou pseudo" id="authorName" autocomplete="username"
 														v-model="recette.authorName"></b-form-input>
 							<label for="authorEmail" class="sr-only">Email <span class="text-danger star-obligatoire">*</span></label>
-							<b-form-input size="sm" type="email" class="search text-white my-2" placeholder="E-mail" id="authorEmail"
+							<b-form-input size="sm" type="email" class="search text-white my-2" placeholder="E-mail" id="authorEmail" autocomplete="email"
 														v-model="recette.authorEmail"></b-form-input>
 							<b-form-checkbox
 									id="checkbox-1"

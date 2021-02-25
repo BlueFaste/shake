@@ -13,6 +13,7 @@
 												id="authorName"
 												class="search text-white my-2"
 												placeholder="Prénom ou pseudo"
+												autocomplete="username"
 												v-model="contact.authorName"></b-form-input>
 					<label for="authorEmail" class="sr-only">Email <span class="text-danger star-obligatoire">*</span></label>
 					<b-form-input size="sm"
@@ -20,6 +21,7 @@
 												type="email"
 												class="search text-white my-2"
 												placeholder="E-mail"
+												autocomplete="email"
 												v-model="contact.authorEmail"></b-form-input>
 				</div>
 			</b-form>
