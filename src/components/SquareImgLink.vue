@@ -2,7 +2,7 @@
 	<div class="position-relative my-4 d-flex justify-content-center">
 		<router-link :to="data.link">
 			<div class="position-relative content-box d-flex">
-				<img alt='' :src="imgLink" class="opacity-80 img-shadow">
+				<img aria-hidden="true" role="presentation" alt='' :src="imgLink" class="opacity-80 img-shadow">
 				<h2 class="position-absolute bottom-left-0 ml-4 mb-4 text-white">{{ data.text }}</h2>
 			</div>
 		</router-link>

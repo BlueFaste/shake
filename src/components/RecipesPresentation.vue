@@ -2,7 +2,7 @@
 	<div class="position-relative my-3 d-flex justify-content-center">
 		<router-link :to="recipe.link">
 			<div class="position-relative content-box d-flex">
-				<img alt='' :src="imgLink" class="opacity-90 img-shadow">
+				<img aria-hidden="true" role="presentation" alt='' :src="imgLink" class="opacity-90 img-shadow">
 				<h3 class="position-absolute ml-3 mt-2 text-white">{{ recipe.name }}</h3>
 			</div>
 		</router-link>

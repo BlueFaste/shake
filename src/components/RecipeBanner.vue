@@ -1,6 +1,6 @@
 <template>
 	<div class="position-relative">
-		<img :src="imgLink" alt="" class="banner-img">
+		<img aria-hidden="true" role="presentation" :src="imgLink" alt="" class="banner-img">
 		<h1 class="position-absolute title-recipe mb-4">{{ recipe.name }}</h1>
 	</div>
 </template>
