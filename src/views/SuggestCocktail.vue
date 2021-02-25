@@ -7,15 +7,17 @@
 				possibilité de partager vos meilleurs cocktails, qui seront concoctés par nos équipes, puis intégrés au
 				site.</p>
 			<p>Vous avez la possibilité de décider si vous souhaitez être crédité ou non.</p>
+
+			<p class="text-obligatoire">Les champs suivis d'un <span class="text-danger star-obligatoire">*</span> sont obligatoire</p>
 			<div>
 				<section class="my-4">
 					<article class="position-relative">
 						<b-form>
-							<h2 class="Montserrat-bold">Informations personnelles :</h2>
-							<label for="authorName" class="sr-only">Prénom ou pseudo</label>
+							<h2 class="Montserrat-bold">Informations personnelles <span class="text-danger star-obligatoire">*</span> :</h2>
+							<label for="authorName" class="sr-only">Prénom ou pseudo <span class="text-danger star-obligatoire">*</span></label>
 							<b-form-input size="sm" class="search text-white my-2" placeholder="Prénom ou pseudo" id="authorName"
 														v-model="recette.authorName"></b-form-input>
-							<label for="authorEmail" class="sr-only">Email</label>
+							<label for="authorEmail" class="sr-only">Email <span class="text-danger star-obligatoire">*</span></label>
 							<b-form-input size="sm" type="email" class="search text-white my-2" placeholder="E-mail" id="authorEmail"
 														v-model="recette.authorEmail"></b-form-input>
 							<b-form-checkbox
@@ -27,7 +29,7 @@
 									class="checkbox d-flex align-items-center justify-content-center my-2"
 							>
 								<label for="checkbox-1">
-									Je souhaite être crédité pour mon cocktail
+									Je souhaite être crédité pour mon cocktail.
 								</label>
 
 							</b-form-checkbox>
@@ -35,7 +37,7 @@
 					</article>
 					<article class="my-4">
 						<b-form>
-							<h2><label class="Montserrat-bold" for="cocktailName">Le nom du cocktail :</label></h2>
+							<h2><label class="Montserrat-bold" for="cocktailName">Le nom du cocktail <span class="text-danger star-obligatoire">*</span> :</label></h2>
 							<div class="position-relative">
 								<b-form-input size="sm" class="search text-white my-2" placeholder="Ex: Mojito Framboise" id="cocktailName"
 															v-model="recette.recipeName"></b-form-input>
@@ -46,7 +48,7 @@
 						<b-form>
 							<h2 class="Montserrat-bold">Les ingrédients :</h2>
 							<div v-for="part in recette.items" :key="part.title">
-								<label class="Montserrat-bold" :for="part.title">{{ part.title }} :</label>
+								<label class="Montserrat-bold" :for="part.title">{{ part.title }} <span class="text-danger star-obligatoire">*</span> :</label>
 								<div class="position-relative">
 									<b-form-input size="sm"
 																:id="part.title"
@@ -80,10 +82,10 @@
 
 					</article>
 					<article class="my-4">
-						<h2 class="Montserrat-bold">La recette :</h2>
+						<h2 class="Montserrat-bold">La recette <span class="text-danger star-obligatoire">*</span> :</h2>
 						<div class="">
 							<b-form>
-								<label for="title" class="sr-only">Titre</label>
+								<label for="title" class="sr-only">Titre <span class="text-danger star-obligatoire">*</span></label>
 								<b-form-input size="sm"
 															id="title"
 															class="search text-white my-2"
@@ -91,7 +93,7 @@
 															v-model="recette.stepsRecipe.newStep.title"></b-form-input>
 
 								<div class="position-relative">
-									<label for="step" class="sr-only">Titre</label>
+									<label for="step" class="sr-only">Étapes <span class="text-danger star-obligatoire">*</span></label>
 									<b-form-textarea class="search text-white my-2" placeholder="Ajouter une étape" rows="3" id="step" v-model="recette.stepsRecipe.newStep.desc"></b-form-textarea>
 									<b-icon role="button"
 													icon="plus"
@@ -130,7 +132,8 @@
 				>
 					<label for="checkbox-2">
 						J'accepte les
-						<a href="https://bastien-rbrt.fr/" target="_blank" class="CGU">conditions générales d'utilisation</a>
+						<a href="https://bastien-rbrt.fr/" target="_blank" class="CGU">conditions générales d'utilisation.</a>
+						<span class="text-danger star-obligatoire">*</span>
 					</label>
 
 				</b-form-checkbox>
@@ -344,6 +347,14 @@ li {
 
 .CGU {
 	text-decoration: underline;
+	font-size: 0.7rem;
+}
+
+.star-obligatoire{
+	font-size: 1rem;
+}
+
+.text-obligatoire{
 	font-size: 0.7rem;
 }
 
