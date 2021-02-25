@@ -32,29 +32,9 @@ export default {
 			mobile: true,
 		}
 	},
-	// mounted() {
-	// 	this.verifUserAgent()
-	// },
-	// updated() {
-	// 	window.scrollTo(0, 0)
-	// 	console.log('test', navigator.userAgent)
-	// 	let userAgent = navigator.userAgent
-	// 	this.mobile = userAgent.includes('Mobile')
-	// 	console.log(this.mobile)
-	// 	// this.verifUserAgent()
-	//
-	// },
-	// methods: {
-	// 	verifUserAgent() {
-	// 		console.log('test', navigator.userAgent)
-	// 		let userAgent = navigator.userAgent
-	// 		this.mobile = userAgent.includes('Mobile')
-	// 		console.log(this.mobile)
-	// 		if (!this.mobile) {
-	// 			this.$router.push({name: 'HomePc'})
-	// 		}
-	// 	}
-	// }
+	updated() {
+		window.scrollTo(0, 0)
+	},
 }
 </script>
 

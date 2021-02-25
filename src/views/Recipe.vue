@@ -61,8 +61,8 @@
 
 			</div>
 		</b-modal>
+			<h2 class="hidden-portable">La recette</h2>
 		<div class="etape-recette hidden-portable" id="div-etape-recette">
-			<h2>La recette</h2>
 			<img src="../assets/background/recipeMojito.png" alt="Vidéo de la recette" @click="$bvModal.hide('modal-etape-recette')" class="video-recipe">
 			<div class="mx-4 mt-4">
 				<div class="d-flex justify-content-between">
@@ -219,7 +219,11 @@ li {
 		width: 100%;
 	}
 
-	.etape-recette.disable{
+	.etape-recette.hidden-portable {
+		border-radius: 80px 80px 20px 20px;
+		background-color: #313131;
+		box-shadow: 0 0 35px rgba(40, 40, 40, 85);
+		padding-bottom: 2rem;
 
 	}
 }
