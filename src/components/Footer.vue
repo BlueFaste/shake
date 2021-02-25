@@ -1,7 +1,7 @@
 <template>
 	<footer role="contentinfo" class="d-flex justify-content-center">
 		<p>
-			<router-link to="">CGU</router-link>
+			<a href="https://carolinefassot.myportfolio.com/" target="_blank">CGU</a>
 			|
 			<router-link to="/contact">Nous contacter</router-link>
 		</p>
