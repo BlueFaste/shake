@@ -7,8 +7,8 @@
 	</b-navbar-brand>
 		<b-navbar-nav class="ml-auto">
 		<b-nav-form class="position-relative">
-			<b-form-input role="search" size="sm" class="search text-white" :placeholder="search.placeholder" v-model="search.searchText" @keypress.enter="lauchSearch"></b-form-input>
-			<router-link to="/search">
+			<b-form-input role="search" size="sm" class="search text-white" :placeholder="search.placeholder" v-model="search.searchText"></b-form-input>
+			<router-link :to="`/search/${search.searchText}`">
 				<b-icon role="button" icon="search" variant="light"  class="position-absolute icon-search"></b-icon>
 			</router-link>
 		</b-nav-form>
