@@ -3,8 +3,7 @@
 		<router-link :to="data.link">
 			<div class="position-relative content-box d-flex">
 				<img alt='' :src="imgLink" class="opacity-80 img-shadow">
-				<h2 class="position-absolute bottom-left-0 ml-4 mb-4 text-white">{{data.text}}</h2>
-
+				<h2 class="position-absolute bottom-left-0 ml-4 mb-4 text-white">{{ data.text }}</h2>
 			</div>
 		</router-link>
 	</div>
@@ -13,7 +12,7 @@
 <script>
 export default {
 	name: "SquareImgLink",
-	props:{
+	props: {
 		data: Object,
 		imgLink: String,
 	}
@@ -21,12 +20,12 @@ export default {
 </script>
 
 <style scoped>
-.bottom-left-0{
+.bottom-left-0 {
 	bottom: 0;
 	left: 0;
 }
 
-.opacity-80{
+.opacity-80 {
 	opacity: 0.80;
 }
 

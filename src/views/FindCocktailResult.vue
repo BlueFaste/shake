@@ -35,13 +35,14 @@
 <script>
 import RecipesPresentation from "@/components/RecipesPresentation";
 import OrangeButton from "@/components/OrangeButton";
+
 export default {
 	name: "Search",
 	components: {OrangeButton, RecipesPresentation},
-	data(){
-		return{
+	data() {
+		return {
 			search: this.$store.state.search.searchText,
-			recipes:this.$store.state.recipes
+			recipes: this.$store.state.recipes
 
 		}
 	}

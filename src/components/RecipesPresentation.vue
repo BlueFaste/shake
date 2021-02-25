@@ -3,8 +3,7 @@
 		<router-link :to="recipe.link">
 			<div class="position-relative content-box d-flex">
 				<img alt='' :src="imgLink" class="opacity-90 img-shadow">
-				<h3 class="position-absolute ml-3 mt-2 text-white">{{recipe.name}}</h3>
-
+				<h3 class="position-absolute ml-3 mt-2 text-white">{{ recipe.name }}</h3>
 			</div>
 		</router-link>
 	</div>
@@ -13,7 +12,7 @@
 <script>
 export default {
 	name: "RecipesPresentation",
-	props:{
+	props: {
 		recipe: Object,
 		imgLink: String,
 	}
@@ -21,11 +20,11 @@ export default {
 </script>
 
 <style scoped>
-.opacity-90{
+.opacity-90 {
 	opacity: 0.90;
 }
 
-h3{
+h3 {
 	font-size: 5.7vw;
 }
 

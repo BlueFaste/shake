@@ -3,7 +3,7 @@
 		<div class="d-flex flex-wrap justify-content-around">
 			<div class="mr-1">
 				<div style="width: 9rem">
-					<p>Resultat de votre recherche pour <span class="DM-Serif-Display h2" >"{{search}}"</span></p>
+					<p>Resultat de votre recherche pour <span class="DM-Serif-Display h2">"{{ search }}"</span></p>
 				</div>
 				<RecipesPresentation :recipe="recipes.mojitoCubain" :imgLink="require('../assets/background/mojitoCubain.png')"></RecipesPresentation>
 				<RecipesPresentation :recipe="recipes.mojitoFramboise" :imgLink="require('../assets/background/MojitoFramboise.png')"></RecipesPresentation>
@@ -39,13 +39,14 @@
 <script>
 import RecipesPresentation from "@/components/RecipesPresentation";
 import OrangeButton from "@/components/OrangeButton";
+
 export default {
 	name: "Search",
 	components: {OrangeButton, RecipesPresentation},
-	data(){
-		return{
+	data() {
+		return {
 			search: this.$store.state.search.searchText,
-			recipes:this.$store.state.recipes
+			recipes: this.$store.state.recipes
 
 		}
 	}

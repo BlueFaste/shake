@@ -1,24 +1,32 @@
 <template>
 	<div>
-		<RecipeBanner :img-link="require('../assets/background/ContactBanner.png')" :recipe="contact.infoPage"></RecipeBanner>
+		<RecipeBanner :img-link="require('../assets/background/ContactBanner.png')"
+									:recipe="contact.infoPage"></RecipeBanner>
 		<div class="my-4">
 			<p>Aenean eget mattis lectus. Proin id sollicitudin nisi. Nullam vitae diam vestibulum, pulvinar nulla nen.</p>
 			<div class="my-4">
 				<h2 class="Montserrat-bold">Informations personnelles :</h2>
 				<div class="position-relative">
-					<b-form-input  size="sm" class="search text-white my-2" placeholder="Prénom ou pseudo" v-model="contact.authorName"></b-form-input>
-					<b-form-input  size="sm" type="email" class="search text-white my-2" placeholder="E-mail" v-model="contact.authorEmail"></b-form-input>
+					<b-form-input size="sm"
+												class="search text-white my-2"
+												placeholder="Prénom ou pseudo"
+												v-model="contact.authorName"></b-form-input>
+					<b-form-input size="sm"
+												type="email"
+												class="search text-white my-2"
+												placeholder="E-mail"
+												v-model="contact.authorEmail"></b-form-input>
 				</div>
 			</div>
 			<div class="my-4">
 				<h2 class="Montserrat-bold">Votre message :</h2>
 				<div class="position-relative">
-					<b-form-textarea  size="sm" class="search text-white my-2" placeholder="Bonjour, ..." rows="4" v-model="contact.message"></b-form-textarea>
+					<b-form-textarea size="sm" class="search text-white my-2" placeholder="Bonjour, ..." rows="4" v-model="contact.message"></b-form-textarea>
 				</div>
 			</div>
 		</div>
 
-		<div class="d-flex justify-content-center my-5"  @click="sendMessage">
+		<div class="d-flex justify-content-center my-5" @click="sendMessage">
 			<OrangeButton text="Envoyer le message"></OrangeButton>
 		</div>
 
@@ -55,26 +63,27 @@
 <script>
 import RecipeBanner from "@/components/RecipeBanner";
 import OrangeButton from "@/components/OrangeButton";
+
 export default {
 	name: "Contact",
 	components: {OrangeButton, RecipeBanner},
-	data(){
-		return{
-			contact:this.$store.state.contact
+	data() {
+		return {
+			contact: this.$store.state.contact
 		}
 	},
-	methods:{
-		sendMessage(){
+	methods: {
+		sendMessage() {
 			// this.$bvModal.show('modal-send-message')
 
 			// console.log('ture')
 			// console.log(this.contact.authorName)
 			// console.log(this.contact.authorEmail)
 			// console.log(this.contact.message)
-			if(this.contact.authorName != '' && this.contact.authorEmail != '' && this.contact.message != ''){
-							this.$bvModal.show('modal-send-message')
-							console.log('contact ok')
-			} else{
+			if (this.contact.authorName != '' && this.contact.authorEmail != '' && this.contact.message != '') {
+				this.$bvModal.show('modal-send-message')
+				console.log('contact ok')
+			} else {
 				console.log('pb info perso')
 			}
 		},
@@ -84,13 +93,14 @@ export default {
 </script>
 
 <style scoped>
-.search, .search:focus{
+.search, .search:focus {
 	background-color: #313131;
 	border: none;
 	border-radius: 20px;
 	width: 100%;
 }
-.search::placeholder{
+
+.search::placeholder {
 	color: white;
 	font-size: 0.8rem;
 	opacity: 0.5;
