@@ -3,10 +3,25 @@
 		<b-navbar role="navigation" class="d-flex justify-content-between mx-2 py-2">
 			<b-navbar-brand>
 				<router-link to="/">
-					<img src="../assets/shake-typo.png" alt="Shake!" style="width: 5rem;">
+					<img src="../assets/shake-typo.png" alt="Shake!" 	lang="en" style="width: 5rem;">
 				</router-link>
 			</b-navbar-brand>
 			<b-navbar-nav class="ml-auto">
+				<b-nav-item class="sr-only	">
+					<router-link to="/findyourcocktail">
+						Trouve ton cocktail
+					</router-link>
+				</b-nav-item>
+				<b-nav-item class="sr-only	">
+					<router-link to="/recettes/all">
+						Nos recettes
+					</router-link>
+				</b-nav-item>
+				<b-nav-item class="sr-only	">
+					<router-link to="/suggestyourcocktail">
+						Propose ton cocktail
+					</router-link>
+				</b-nav-item>
 				<b-nav-form class="position-relative">
 					<b-form-input role="search"
 												size="sm"
