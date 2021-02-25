@@ -27,7 +27,7 @@
 		</section>
 
 		<div class="d-flex justify-content-center my-5" @click="sendMessage">
-			<OrangeButton text="Envoyer le message"></OrangeButton>
+			<OrangeButton title="Envoyer le message" text="Envoyer le message"></OrangeButton>
 		</div>
 
 		<b-modal

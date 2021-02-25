@@ -33,7 +33,7 @@
 				</div>
 
 				<div class="d-flex justify-content-center my-4" @click.prevent="openSteps">
-					<OrangeButton text="C'est parti !"></OrangeButton>
+					<OrangeButton title="Afficher les étapes de la recette" text="C'est parti !"></OrangeButton>
 				</div>
 			</section>
 		</div>

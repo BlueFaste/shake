@@ -20,7 +20,7 @@
 			</div>
 		</section>
 		<div class="d-flex justify-content-center my-4">
-			<OrangeButton text="Charger plus +"></OrangeButton>
+			<OrangeButton title="Chargez plus de recettes" text="Charger plus +"></OrangeButton>
 		</div>
 	</main>
 </template>

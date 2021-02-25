@@ -137,7 +137,7 @@
 			</div>
 		</div>
 		<div class="d-flex justify-content-center my-5" @click="suggestCocktail">
-			<OrangeButton text="Je propose mon cocktail"></OrangeButton>
+			<OrangeButton title="Je propose mon cocktail" text="Je propose mon cocktail"></OrangeButton>
 		</div>
 
 		<b-modal

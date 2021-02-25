@@ -38,7 +38,7 @@
 						<a href="https://sites.google.com/view/erwinwebsite/accueil" target="_blank">ici</a> !</p>
 				</article>
 				<router-link to="/findyourcocktail/result" class="d-flex justify-content-center my-5">
-					<OrangeButton text="Trouve ton cocktail"></OrangeButton>
+					<OrangeButton title="Trouve ton cocktail" text="Trouve ton cocktail"></OrangeButton>
 				</router-link>
 			</div>
 		</section>

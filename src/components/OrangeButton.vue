@@ -1,5 +1,5 @@
 <template>
-	<b-button class="orange-button px-4">
+	<b-button :title="title" class="orange-button px-4">
 		{{ text }}
 	</b-button>
 </template>
@@ -8,7 +8,8 @@
 export default {
 	name: "OrangeButton",
 	props: {
-		text: String
+		text: String,
+		title: String
 	}
 }
 </script>

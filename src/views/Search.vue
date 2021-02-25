@@ -31,7 +31,7 @@
 			</section>
 		</div>
 		<router-link to="/recettes/all" class="d-flex justify-content-center my-4">
-			<OrangeButton text="Toutes nos recettes"></OrangeButton>
+			<OrangeButton title="Toutes nos recettes" text="Toutes nos recettes"></OrangeButton>
 		</router-link>
 	</main>
 </template>

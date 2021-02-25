@@ -5,7 +5,7 @@
 			Duis tincidunt velit nec lectus interdum, quis volutpat tellus tempor. Aliquam feugiat velit consequat blandit
 			interdum. Integer non enim dolor.</p>
 		<router-link to="/findyourcocktail" class="d-flex justify-content-end my-4">
-			<OrangeButton text="Trouve ton cocktail"></OrangeButton>
+			<OrangeButton title="Trouve ton cocktail" text="Trouve ton cocktail"></OrangeButton>
 		</router-link>
 		<SquareImgLink :data="data.ourRecipes" :imgLink="require('../assets/background/dylan-gillis-3e_tXW5O3GQ-unsplash.png')"></SquareImgLink>
 		<SquareImgLink :data="data.proposYourRecipes" :imgLink="require('../assets/background/timur-romanov-GsavR7VMkpk-unsplash.png')"></SquareImgLink>
@@ -26,7 +26,7 @@
 			</div>
 		</section>
 		<router-link to="/recettes/all" class="d-flex justify-content-center my-4">
-			<OrangeButton text="Tout voir"></OrangeButton>
+			<OrangeButton title="Voir toutes les recettes" text="Tout voir"></OrangeButton>
 		</router-link>
 	</main>
 </template>
