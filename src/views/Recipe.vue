@@ -11,22 +11,22 @@
 					<div class="d-flex flex-wrap justify-content-between">
 						<div class="order-0 mr-2">
 							<h3>Alcool :</h3>
-							<ul>
-								<li v-for="ingredient in recipe.ingredient.alcohol" :key="ingredient">
+							<ul role="list">
+								<li  role="listitem" v-for="ingredient in recipe.ingredient.alcohol" :key="ingredient">
 									{{ ingredient }}
 								</li>
 							</ul>
 						</div>
 						<div class="order-2">
 							<h3>Softs :</h3>
-							<ul>
-								<li v-for="ingredient in recipe.ingredient.soft" :key="ingredient">{{ ingredient }}</li>
+							<ul role="list">
+								<li  role="listitem" v-for="ingredient in recipe.ingredient.soft" :key="ingredient">{{ ingredient }}</li>
 							</ul>
 						</div>
 						<div class="order-1">
 							<h3>Autres :</h3>
-							<ul>
-								<li v-for="ingredient in recipe.ingredient.other" :key="ingredient">{{ ingredient }}</li>
+							<ul role="list">
+								<li  role="listitem" v-for="ingredient in recipe.ingredient.other" :key="ingredient">{{ ingredient }}</li>
 							</ul>
 						</div>
 					</div>
@@ -45,8 +45,8 @@
 					<h2>Étapes</h2>
 					<b-icon class="h2" style="cursor: pointer;" icon="X" @click="closeSteps" role="button"></b-icon>
 				</div>
-				<ul>
-					<li v-for="etape in recipe.step" :key="etape.n" class="mb-4">
+				<ul role="list">
+					<li  role="listitem" v-for="etape in recipe.step" :key="etape.n" class="mb-4">
 						<div class="d-flex align-items-center">
 							<h3 class="m-0">
 								<span style="color: #F6A31E" class="DM-Serif-Display">{{ etape.n }}.</span>

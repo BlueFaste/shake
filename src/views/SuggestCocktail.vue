@@ -50,8 +50,8 @@
 												@click="addItem(part)"></b-icon>
 							</div>
 							<div>
-								<ul class="pl-4 mt-2">
-									<li v-for="el in part.array" :key="el"
+								<ul role="list" class="pl-4 mt-2">
+									<li  role="listitem" v-for="el in part.array" :key="el"
 											class="d-flex justify-content-between align-items-center  mr-4"> {{ el }}
 										<span class="line ml-2"> </span>
 										<b-icon role="button"
@@ -82,8 +82,8 @@
 												class="position-absolute icon-textArea"
 												@click="addStep()"></b-icon>
 							</div>
-							<ul class="pl-3">
-								<li v-for="step in recette.stepsRecipe.steps" :key="step.n" class="mb-4">
+							<ul role="list" class="pl-3">
+								<li  role="listitem" v-for="step in recette.stepsRecipe.steps" :key="step.n" class="mb-4">
 									<div class="d-flex align-items-center justify-content-between">
 										<h3 class="m-0">
 											<span style="color: #F6A31E" class="DM-Serif-Display">{{ step.n }}.</span>

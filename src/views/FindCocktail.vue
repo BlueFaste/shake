@@ -19,8 +19,8 @@
 										@click="addItem(part)"></b-icon>
 					</div>
 					<div>
-						<ul class="pl-4 mt-2">
-							<li v-for="el in part.array" :key="el" class="d-flex justify-content-between align-items-center  mr-4">
+						<ul role="list" class="pl-4 mt-2">
+							<li  role="listitem" v-for="el in part.array" :key="el" class="d-flex justify-content-between align-items-center  mr-4">
 								{{ el }}
 								<span class="line ml-2"> </span>
 								<b-icon role="button"
