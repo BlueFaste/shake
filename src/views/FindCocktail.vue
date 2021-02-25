@@ -20,7 +20,7 @@
 					</div>
 					<p v-if="part.alcohol" class="text-buy-alcohol">Pas d'alcools ? Achetez-en <a href="https://sites.google.com/view/erwinwebsite/accueil" target="_blank">ici</a> !</p>
 				</div>
-				<router-link to="/recettes/all" class="d-flex justify-content-center my-5">
+				<router-link to="/findyourcocktail/result" class="d-flex justify-content-center my-5">
 					<OrangeButton text="Trouve ton cocktail"></OrangeButton>
 				</router-link>
 			</div>
