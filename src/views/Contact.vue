@@ -47,7 +47,7 @@
 
 			<template #modal-footer>
 				<b-button
-						variant="primary"
+						variant="warning"
 						size="sm"
 						class="float-right"
 						@click="$bvModal.hide('modal-send-message')"
