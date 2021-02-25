@@ -5,9 +5,11 @@
 			<p>Aenean eget mattis lectus. Proin id sollicitudin nisi. Nullam vitae diam vestibulum, pulvinar nulla nen.</p>
 			<div>
 				<article v-for="part in items" :key="part.title">
-					<h2 class="Montserrat-bold">{{ part.title }} :</h2>
-					<div class="position-relative">
+					<b-form>
+						<h2><label class="Montserrat-bold" :for="part.title">{{ part.title }} :</label></h2>
+						<div class="position-relative">
 						<b-form-input size="sm"
+													:id="part.title"
 													class="search text-white"
 													:placeholder="part.placeholder"
 													v-model="part.newValue"
@@ -18,6 +20,8 @@
 										class="position-absolute icon-search"
 										@click="addItem(part)"></b-icon>
 					</div>
+					</b-form>
+
 					<div>
 						<ul role="list" class="pl-4 mt-2">
 							<li  role="listitem" v-for="el in part.array" :key="el" class="d-flex justify-content-between align-items-center  mr-4">

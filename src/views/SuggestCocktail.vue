@@ -10,78 +10,97 @@
 			<div>
 				<section class="my-4">
 					<article class="position-relative">
-						<h2 class="Montserrat-bold">Informations personnelles :</h2>
-						<b-form-input size="sm" class="search text-white my-2" placeholder="Prénom ou pseudo"
-													v-model="recette.authorName"></b-form-input>
-						<b-form-input size="sm" type="email" class="search text-white my-2" placeholder="E-mail"
-													v-model="recette.authorEmail"></b-form-input>
-						<b-form-checkbox
-								id="checkbox-1"
-								v-model="recette.authorCredit"
-								name="checkbox-1"
-								value=true
-								unchecked-value=false
-								class="checkbox d-flex align-items-center justify-content-center my-2"
-						>
-							Je souhaite être crédité pour mon cocktail
-						</b-form-checkbox>
-					</article>
-					<article class="my-4">
-						<h2 class="Montserrat-bold">Le nom du cocktail :</h2>
-						<div class="position-relative">
-							<b-form-input size="sm" class="search text-white my-2" placeholder="Ex: Mojito Framboise"
-														v-model="recette.recipeName"></b-form-input>
-						</div>
-					</article>
-					<article class="my-4">
-						<h2 class="Montserrat-bold">Les ingrédients :</h2>
-						<div v-for="part in recette.items" :key="part.title">
-							<h3 class="Montserrat-bold">{{ part.title }} :</h3>
-							<div class="position-relative">
-								<b-form-input size="sm"
-															class="search text-white"
-															:placeholder="part.placeholder"
-															v-model="part.newValue"
-															@keypress.enter="addItem(part)"></b-form-input>
-								<b-icon role="button"
-												icon="plus"
-												variant="light"
-												class="position-absolute icon-search"
-												@click="addItem(part)"></b-icon>
-							</div>
-							<div>
-								<ul role="list" class="pl-4 mt-2">
-									<li  role="listitem" v-for="el in part.array" :key="el"
-											class="d-flex justify-content-between align-items-center  mr-4"> {{ el }}
-										<span class="line ml-2"> </span>
-										<b-icon role="button"
-														icon="x"
-														variant="secondary"
-														class="icon-cross"
-														@click="deleteItem(el, part.array)"></b-icon>
+						<b-form>
+							<h2 class="Montserrat-bold">Informations personnelles :</h2>
+							<label for="authorName" class="sr-only">Prénom ou pseudo</label>
+							<b-form-input size="sm" class="search text-white my-2" placeholder="Prénom ou pseudo" id="authorName"
+														v-model="recette.authorName"></b-form-input>
+							<label for="authorEmail" class="sr-only">Email</label>
+							<b-form-input size="sm" type="email" class="search text-white my-2" placeholder="E-mail" id="authorEmail"
+														v-model="recette.authorEmail"></b-form-input>
+							<b-form-checkbox
+									id="checkbox-1"
+									v-model="recette.authorCredit"
+									name="checkbox-1"
+									value=true
+									unchecked-value=false
+									class="checkbox d-flex align-items-center justify-content-center my-2"
+							>
+								<label for="checkbox-1">
+									Je souhaite être crédité pour mon cocktail
+								</label>
 
-									</li>
-								</ul>
+							</b-form-checkbox>
+						</b-form>
+					</article>
+					<article class="my-4">
+						<b-form>
+							<h2><label class="Montserrat-bold" for="cocktailName">Le nom du cocktail :</label></h2>
+							<div class="position-relative">
+								<b-form-input size="sm" class="search text-white my-2" placeholder="Ex: Mojito Framboise" id="cocktailName"
+															v-model="recette.recipeName"></b-form-input>
 							</div>
-							<p v-if="part.alcohol" class="text-buy-alcohol">Pas d'alcools ? Achetez-en
-								<a href="https://sites.google.com/view/erwinwebsite/accueil" target="_blank">ici</a> !</p>
-						</div>
+						</b-form>
+					</article>
+					<article class="my-4">
+						<b-form>
+							<h2 class="Montserrat-bold">Les ingrédients :</h2>
+							<div v-for="part in recette.items" :key="part.title">
+								<label class="Montserrat-bold" :for="part.title">{{ part.title }} :</label>
+								<div class="position-relative">
+									<b-form-input size="sm"
+																:id="part.title"
+																class="search text-white"
+																:placeholder="part.placeholder"
+																v-model="part.newValue"
+																@keypress.enter="addItem(part)"></b-form-input>
+									<b-icon role="button"
+													icon="plus"
+													variant="light"
+													class="position-absolute icon-search"
+													@click="addItem(part)"></b-icon>
+								</div>
+								<div>
+									<ul role="list" class="pl-4 mt-2">
+										<li  role="listitem" v-for="el in part.array" :key="el" class="d-flex justify-content-between align-items-center  mr-4"> {{ el }}
+											<span class="line ml-2"> </span>
+											<b-icon role="button"
+															icon="x"
+															variant="secondary"
+															class="icon-cross"
+															@click="deleteItem(el, part.array)"></b-icon>
+
+										</li>
+									</ul>
+								</div>
+								<p v-if="part.alcohol" class="text-buy-alcohol">Pas d'alcools ? Achetez-en
+									<a href="https://sites.google.com/view/erwinwebsite/accueil" target="_blank">ici</a> !</p>
+							</div>
+						</b-form>
+
 					</article>
 					<article class="my-4">
 						<h2 class="Montserrat-bold">La recette :</h2>
 						<div class="">
-							<b-form-input size="sm"
-														class="search text-white my-2"
-														placeholder="Ajout un titre à l'étape"
-														v-model="recette.stepsRecipe.newStep.title"></b-form-input>
-							<div class="position-relative">
-								<b-form-textarea class="search text-white my-2" placeholder="Ajouter une étape" rows="3" v-model="recette.stepsRecipe.newStep.desc"></b-form-textarea>
-								<b-icon role="button"
-												icon="plus"
-												variant="light"
-												class="position-absolute icon-textArea"
-												@click="addStep()"></b-icon>
-							</div>
+							<b-form>
+								<label for="title" class="sr-only">Titre</label>
+								<b-form-input size="sm"
+															id="title"
+															class="search text-white my-2"
+															placeholder="Ajout un titre à l'étape"
+															v-model="recette.stepsRecipe.newStep.title"></b-form-input>
+
+								<div class="position-relative">
+									<label for="step" class="sr-only">Titre</label>
+									<b-form-textarea class="search text-white my-2" placeholder="Ajouter une étape" rows="3" id="step" v-model="recette.stepsRecipe.newStep.desc"></b-form-textarea>
+									<b-icon role="button"
+													icon="plus"
+													variant="light"
+													class="position-absolute icon-textArea"
+													@click="addStep()"></b-icon>
+								</div>
+							</b-form>
+
 							<ul role="list" class="pl-3">
 								<li  role="listitem" v-for="step in recette.stepsRecipe.steps" :key="step.n" class="mb-4">
 									<div class="d-flex align-items-center justify-content-between">
@@ -109,8 +128,11 @@
 						unchecked-value=false
 						class="checkbox d-flex align-items-center my-2 justify-content-center"
 				>
-					J'accepte les
-					<a href="https://bastien-rbrt.fr/" target="_blank" class="CGU">conditions générales d'utilisation</a>
+					<label for="checkbox-2">
+						J'accepte les
+						<a href="https://bastien-rbrt.fr/" target="_blank" class="CGU">conditions générales d'utilisation</a>
+					</label>
+
 				</b-form-checkbox>
 			</div>
 		</div>
