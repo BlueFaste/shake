@@ -20,7 +20,7 @@ export const recipes = {
 				{
 					n: '02',
 					title: 'Préparer le verre',
-					desc: 'Versez délicatement dans le verre pour ne pa faire de mousse.'
+					desc: 'Versez délicatement dans le verre pour ne pas faire de mousse.'
 				},
 				{
 					n: '03',

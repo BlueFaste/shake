@@ -127,4 +127,17 @@ p a {
 	border-radius: 20px;
 	background-color: #404040
 }
+
+@media (min-width:1024px ) {
+	.search, .search:focus {
+		width: 60%;
+	}
+	.icon-search {
+		right: 42%;
+	}
+
+	li{
+		width: 50% !important;
+	}
+}
 </style>
