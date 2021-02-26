@@ -10,7 +10,7 @@
 					<OrangeButton title="Trouve ton cocktail" text="Trouve ton cocktail"></OrangeButton>
 				</router-link>
 			</div>
-			<div>
+			<div class="square-img-link  d-flex flex-column justify-content-center align-items-center ">
 				<SquareImgLink :data="data.ourRecipes" :imgLink="require('../assets/background/dylan-gillis-3e_tXW5O3GQ-unsplash.png')"></SquareImgLink>
 				<SquareImgLink :data="data.proposYourRecipes" :imgLink="require('../assets/background/timur-romanov-GsavR7VMkpk-unsplash.png')"></SquareImgLink>
 			</div>
@@ -129,6 +129,9 @@ h2{
 		flex-direction: column;
 	}
 
+	.square-img-link{
+		width: 100%;
+	}
 
 }
 </style>
