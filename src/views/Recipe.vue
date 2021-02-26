@@ -224,6 +224,7 @@ li {
 		background-color: #313131;
 		box-shadow: 0 0 35px rgba(40, 40, 40, 85);
 		padding-bottom: 2rem;
+		margin-bottom: 4rem;
 
 	}
 }

@@ -30,11 +30,7 @@ export const suggestYourCocktail = {
 				},
 			},
 			stepsRecipe:{
-				steps:[{
-					n:'01',
-					title:'Pilez la glace',
-					desc:'Mettez vos glaçons dans un torchon, refermez-le puis, à l\'aide d\'un rouleau à pâtisserie, pilez la glace. Versez dans un bol et réservez au congélateur.'
-				},],
+				steps:[],
 				newStep:{
 					n:'',
 					title:'',
