@@ -14,7 +14,7 @@
 												class="search text-white my-2"
 												placeholder="Prénom ou pseudo"
 												autocomplete="username"
-												v-model="contact.authorName"></b-form-input>
+												v-model="contact.contact.authorName"></b-form-input>
 					<label for="authorEmail" class="sr-only">Email <span class="text-danger star-obligatoire">*</span></label>
 					<b-form-input size="sm"
 												id="authorEmail"
@@ -22,13 +22,13 @@
 												class="search text-white my-2"
 												placeholder="E-mail"
 												autocomplete="email"
-												v-model="contact.authorEmail"></b-form-input>
+												v-model="contact.contact.authorEmail"></b-form-input>
 				</div>
 			</b-form>
 			<div class="my-4">
 				<h2><label class="Montserrat-bold" for="message">Votre message <span class="text-danger star-obligatoire">*</span></label> :</h2>
 				<div class="position-relative">
-					<b-form-textarea size="sm" id="message" class="search text-white my-2" placeholder="Bonjour, ..." rows="4" v-model="contact.message"></b-form-textarea>
+					<b-form-textarea size="sm" id="message" class="search text-white my-2" placeholder="Bonjour, ..." rows="4" v-model="contact.contact.message"></b-form-textarea>
 				</div>
 			</div>
 		</section>
@@ -83,11 +83,11 @@ export default {
 		sendMessage() {
 			// this.$bvModal.show('modal-send-message')
 
-			// console.log('ture')
-			// console.log(this.contact.authorName)
-			// console.log(this.contact.authorEmail)
-			// console.log(this.contact.message)
-			if (this.contact.authorName != '' && this.contact.authorEmail != '' && this.contact.message != '') {
+			console.log('ture')
+			console.log(this.contact.contact.authorName)
+			console.log(this.contact.contact.authorEmail)
+			console.log(this.contact.contact.message)
+			if (this.contact.contact.authorName != '' && this.contact.contact.authorEmail != '' && this.contact.contact.message != '') {
 				this.$bvModal.show('modal-send-message')
 				console.log('contact ok')
 			} else {

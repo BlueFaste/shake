@@ -41,7 +41,7 @@ figure {
 @media (min-width:1024px ) {
 	figure{
 		width: 100%;
-		transform: scale(1.108);
+		transform: scale(1.137);
 		margin: 2rem 0;
 		overflow:hidden; /*hide bounds of image */
 	}
@@ -49,6 +49,10 @@ figure {
 		display:block; /*remove inline-block spaces*/
 		width:100% !important; /*make image streatch*/
 		margin: -15% 0;
+	}
+
+	div.position-relative{
+		margin-bottom: 4rem;
 	}
 
 }
