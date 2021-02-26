@@ -1,6 +1,6 @@
 export const contact = {
 	state: () => ({
-		infoPage:{
+		infoPage: {
 			name: 'Contactez-nous'
 		},
 		contact: {
