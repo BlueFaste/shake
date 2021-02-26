@@ -79,7 +79,6 @@ export default {
 	},
 	data() {
 		return {
-			test: this.$store.state.test.test,
 			data: this.$store.state.squareImgLink,
 			recipes: this.$store.state.recipes,
 
