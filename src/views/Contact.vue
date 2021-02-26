@@ -120,4 +120,10 @@ export default {
 .text-obligatoire{
 	font-size: 0.7rem;
 }
+
+@media (min-width:1024px ) {
+	.search, .search:focus {
+		width: 60%;
+	}
+	}
 </style>

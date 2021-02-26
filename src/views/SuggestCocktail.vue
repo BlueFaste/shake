@@ -26,7 +26,7 @@
 									name="checkbox-1"
 									value=true
 									unchecked-value=false
-									class="checkbox d-flex align-items-center justify-content-center my-2"
+									class="checkbox d-flex align-items-center my-2"
 							>
 								<label for="checkbox-1">
 									Je souhaite être crédité pour mon cocktail.
@@ -128,7 +128,7 @@
 						name="checkbox-2"
 						value=true
 						unchecked-value=false
-						class="checkbox d-flex align-items-center my-2 justify-content-center"
+						class="checkbox d-flex align-items-center my-2"
 				>
 					<label for="checkbox-2">
 						J'accepte les
@@ -324,6 +324,20 @@ export default {
 	-ms-transform: scaleX(2) scaleY(2);
 }
 
+@media (min-width:1024px ) {
+	.icon-search {
+		right: 42%;
+	}
+
+	.icon-textArea {
+		right: 42%;
+	}
+
+	li{
+		width: 50% !important;
+	}
+}
+
 .line {
 	display: block;
 	width: 100%;
@@ -358,5 +372,11 @@ li {
 	font-size: 0.7rem;
 }
 
+
+@media (min-width:1024px ) {
+	.search, .search:focus {
+		width: 60%;
+	}
+}
 
 </style>
