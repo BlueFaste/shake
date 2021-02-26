@@ -9,7 +9,7 @@ export const recipes = {
 			ingredient: {
 				alcohol: ['4cl de rhum blanc', '2cl de rhum ambré'],
 				soft: ['1 eau gazeuse', '12 cl de jus de framboise'],
-				other: [ 'Tanches de citron', 'Feuilles de menthe']
+				other: ['Tanches de citron', 'Feuilles de menthe']
 			},
 			step: [
 				{
@@ -115,7 +115,7 @@ export const recipes = {
 			name: 'Americano',
 			desc: 'Aenean eget mattis lectus. Proin id sollicitudin nisi. Nullam vitae diam vestibulum, pulvinar nulla nec, pellentesque magna. Aenean varius ut lacus laoreet sollicitudin. Morbi et tortor rutrum, rutrum metus sit amet, ornare ligula. Quisque semper sapien a est vestibulum, eu porttitor velit rhoncus. Phasellus nibh orci, facilisis vel elit eu, feugiat pulvinar ipsum. Praesent at magna augue.',
 			ingredient: {
-				alcohol: ['8 cl de Campari','8 cl de Cinzano rouge', '8 cl de noilly prat'],
+				alcohol: ['8 cl de Campari', '8 cl de Cinzano rouge', '8 cl de noilly prat'],
 				soft: ['1 cuillère à soupe de sirop de grenadine'],
 				other: ['1 tranche d\'orange', '1tranche de citron']
 			},
