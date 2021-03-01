@@ -40,9 +40,9 @@ figure {
 
 @media (min-width:1024px ) {
 	figure{
-		width: 100%;
-		transform: scale(1.137);
-		margin: 2rem 0;
+		width: 60vw;
+		height: 30vh;
+		margin: 2rem -3.5rem;
 		overflow:hidden; /*hide bounds of image */
 	}
 	figure img{
